@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html class="live zh-cn">
+
+<head>
+	<meta charset="UTF-8">
+	<title>视讯直播</title>
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Share core Javascript -->
+	<script src="js/jquery.js"></script>
+</head>
+
+<body>
+	<div id="mainBody">
+		<!-- begin page-header -->
+		<div id="page-header">
+			<div class="header-top">
+				<div class="page-position">
+					<div class="logo">
+						<a href="index.html"></a>
+					</div>
+					<!-- begin lang-wrap -->
+					<div id="lang-wrap" class="lang-wrap">
+						<div class="langTitle">
+							<a href="#">简体中文</a>
+						</div>
+						<div id="langOption" style="display: none;">
+							<a href="#" class="zh-tw">繁體中文</a>
+							<a href="#" class="en">ENGLISH</a>
+						</div>
+					</div>
+					<!-- end lang-wrap -->
+					<!-- begin login -->
+					<div class="login-wrap">
+						<div id="login">
+							<form class="login-input form-group">
+								<input type="text" placeholder="帐号" class="form-control name">
+								<input type="text" placeholder="密码" class="form-control password">
+								<input type="text" placeholder="验证码" class="form-control key">
+								<a class="login-btn btn-submit" href="index_login.html">登入</a>
+							</form>
+							<div class="login-btn-wrap">
+								<ul>
+									<li><a href="#" class="login-btn btn-joinus">忘记密码</a></li>
+									<li><a href="#" class="getPW">加入会员</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--end login -->
+					<div class="mainnav">
+						<ul class="nav">
+							<li id="LS-fist" class="LS-first"><a href="index.html">首页</a><span></span></li>
+							<li id="LS-ball" class="LS-ball"><a href="#.html">体育赛事</a>
+								<div id="nav-ball" style="display:none" class="ele-lsub-group">
+                                	<a v-for="todo in todos" :href="todo.link">{{ todo.name }}</a>
+                                </div>
+                                <span></span>
+							</li>
+							<li id="LS-live" class="LS-live current"><a href="live.html">视讯直播</a><span></span></li>
+							<li id="LS-game" class="LS-game"><a href="#">电子游艺</a>
+								<div id="nav-game" style="display:none" class="ele-lsub-group">
+                                    <div class="lsub-inner-wrap">
+                                        <a v-for="todo in todos" :href="todo.link">{{ todo.name }}</a>
+                                    </div>
+                                </div>
+								<span></span>
+							</li>
+							<li id="LS-lottery" class="LS-lottery"><a href="lottery.html">彩票游戏</a><span></span></li>
+							<li id="LS-memberexclusiveii" class="LS-memberexclusiveii"><a href="promotions.html">优惠活动</a><span></span></li>
+							<li id="LS-service" class="LS-service"><a href="#">在线客服</a><span></span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="banner"></div>
+			</div>
+			<!-- end header-top -->
+		</div>
+		<!--end page-header -->
+
+		<!-- begin page-container -->
+		<div id="page-container">
+			<!--begin page-body -->
+			<div class="page-body">
+				 <!-- begin live -->
+				<div class="live-wrap">
+          <link rel="stylesheet" href="css/live_style.css">
+<div class="ele-live-wrap">
+    <div class="live-nav">
+        <ul class="row-1 col-6 clearfix">
+            <li class="bbin noline">
+                <span><a href="#0">BB视讯<i class="arrow"></i></a></span>
+                <div class="link">
+                    <a href="#0"><i class="ico-multibet">多台下注</i></a>
+                    <a href="#0"><i class="ico-livedealer">快速厅</i></a>
+                    <a href="#0"><i class="ico-ultimate">旗舰厅</i></a>
+                    <a href="#0"><i class="ico-bid">竞咪厅</i></a>
+                    <a href="#0"><i class="ico-vip">包桌厅</i></a>
+                    <a href="#0"><i class="ico-robotlive">金臂厅</i></a>
+                </div>
+            </li>
+            <li><a href="#0">AG视讯</a></li>
+            <li class="nth-child-3n"><a href="#0">欧博视讯</a></li>
+            <li class="table-noline"><a href="#0">OG视讯</a></li>
+            <li class="table-noline"><a href="#0">GD视讯</a></li>
+            <li class="last-child nth-child-3n table-noline"><a href="#0">SA视讯</a></li>
+        </ul>
+    </div>
+    <div class="live-content col-5">
+        <div class="block">
+            <div class="block-bbin">
+                <div class="block-bbin-wrap">
+                    <div id="ele-live-rule-open" class="ele-live-rule-open"></div>
+                    <ul class="link removeTextNodes">
+                        <li>
+                            <a href="#0"><i class="ico-multibet"></i><h2>多台下注</h2></a>
+                        </li>
+                        <li>
+                            <a href="#0"><i class="ico-livedealer"></i><h2>快速厅</h2></a>
+                        </li>
+                        <li>
+                            <a href="#0"><i class="ico-ultimate"></i><h2>旗舰厅</h2></a>
+                        </li>
+                        <li>
+                            <a href="#0"><i class="ico-bid"></i><h2>竞咪厅</h2></a>
+                        </li>
+                        <li>
+                            <a href="#0"><i class="ico-vip"></i><h2>包桌厅</h2></a>
+                        </li>
+                        <li>
+                            <a href="#0"><i class="ico-robotlive"></i><h2>金臂厅</h2></a>
+                        </li>
+                    </ul>
+                    <button class="btn-play">PLAY NOW</button>
+                </div>
+                <div class="ele-bbin-rule-wrap">
+                    <div id="ele-live-rule-close" class="ele-live-rule-close"></div>
+                    <div class="ele-rule-text-wrap">
+                        <p class="ele-rule-title">規則說明</p>
+                        <a class="ele-item-liverule" href="#0" title="競注輪盤">競注輪盤</a>
+                        <span class="ele-rule-line">|</span>
+                        <a class="ele-item-liverule" href="#0" title="競骰骰寶">競骰骰寶</a>
+                        <span class="ele-rule-line">|</span>
+                        <a class="ele-item-liverule" href="#0" title="競眯百家樂">競眯百家樂</a>
+                        <span class="ele-rule-line">|</span>
+                        <a class="ele-item-liverule" href="#0" title="百家樂">百家樂</a>
+                        <br>
+                        <a class="ele-item-liverule" href="#0" title="二八槓">二八槓</a>
+                        <span class="ele-rule-line">|</span>
+                        <a class="ele-item-liverule" href="#0" title="龍虎鬥">龍虎鬥</a>
+                        <span class="ele-rule-line">|</span>
+                        <a class="ele-item-liverule" href="#0" title="三公">三公</a>
+                        <span class="ele-rule-line">|</span>
+                        <a class="ele-item-liverule" href="#0" title="溫州牌九">溫州牌九</a>
+                        <br>
+                        <a class="ele-item-liverule" href="#0" title="輪盤">輪盤</a>
+                        <span class="ele-rule-line">|</span>
+                        <a class="ele-item-liverule" href="#0" title="骰寶">骰寶</a>
+                        <span class="ele-rule-line">|</span>
+                        <a class="ele-item-liverule" href="#0" title="德州撲克">德州撲克</a>
+                        <span class="ele-rule-line">|</span>
+                        <a class="ele-item-liverule" href="#0" title="色碟">色碟</a>
+                        <br>
+                        <a class="ele-item-liverule" href="#0" title="牛牛">牛牛</a>
+                        <span class="ele-rule-line">|</span>
+                        <a class="ele-item-liverule" href="#0" title="無限21點">無限21點</a>
+                        <span class="ele-rule-line">|</span>
+                        <a class="ele-item-liverule" href="#0" title="番攤">番攤</a>
+                    </div>
+                    <button class="btn-play">PLAY NOW</button>
+                </div>
+                <a href="#0"><img src="image/live/layout/bbin_n.png"></a>
+            </div>
+        </div>
+        <div class="block-others">
+            <div class="block-ag">
+                <a href="#0">
+                    <span></span>
+                    <img src="image/live/layout/ag_m_n.png" class="tablet">
+                    <img src="image/live/layout/ag_l_n.png" class="mobile">
+                </a>
+            </div>
+            <div class="block-allbet">
+                <a href="#0">
+                    <span></span>
+                    <img src="image/live/layout/allbet_m_n.png" class="tablet">
+                    <img src="image/live/layout/allbet_l_n.png" class="mobile">
+                </a>
+            </div>
+            <div class="block-og">
+                <a href="#0">
+                    <span></span>
+                    <img src="image/live/layout/og_m_n.png" class="tablet">
+                    <img src="image/live/layout/og_l_n.png" class="mobile">
+                </a>
+            </div>
+            <div class="block-gd">
+                <a href="#0">
+                    <span></span>
+                    <img src="image/live/layout/gd_m_n.png" class="tablet">
+                    <img src="image/live/layout/gd_l_n.png" class="mobile">
+                </a>
+            </div>
+            <div class="block-sa">
+                <a href="#0">
+                    <span></span>
+                    <img src="image/live/layout/sa_m_n.png" class="tablet">
+                    <img src="image/live/layout/sa_l_n.png" class="mobile">
+                </a>
+            </div>
+            <div class="block-ad1 img-1">
+                <a href="#0">
+                    <img src="image/live/not-use/ad01_s.png" class="tablet">
+                    <img src="image/live/not-use/ad01_m.png" class="mobile">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/live/main.js"></script>
+
+				</div>
+				<!-- end live -->
+			</div>
+			<!-- end page-body -->
+		</div>
+		<!-- end page-container -->
+
+		<!-- begin page-footer -->
+	  <div id="page-footer">
+  <div class="wrapper">
+    <div class="footer-infor clearfix">
+      <ul>
+        <li>
+          <div class="footer-infor-title">MOBILE BET</div>
+          <div class="footer-infor-content"><a href="#"><img src="image/lang/zh-cn/footer_mobile.png"></a></div>
+        </li>
+        <li>
+          <div class="footer-infor-title">PAYMENT METHODS</div>
+          <div class="footer-infor-content"><img src="image/footer_img.png"></div>
+        </li>
+        <li>
+          <div class="footer-infor-title">ONLINE SERVICE</div>
+          <div class="footer-infor-content"><a href="#"><img src="image/footer_service.png"></a></div>
+        </li>
+      </ul>;
+
+    </div>
+    <div class="footer-logo">
+      <a href="#"><img src="image/bbinlogo.png"></a>
+      <a href="#"><img src="image/ublogo.png"></a>
+    </div>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="about.html">关于我们</a></li>
+        <li><a href="#">联系我们</a></li>
+        <li><a href="#">合作伙伴</a></li>
+        <li><a href="#">存款帮助</a></li>
+        <li><a href="#">取款帮助</a></li>
+        <li><a href="#">常见问题</a></li>
+        <li><a href="#">责任博彩</a></li>
+      </ul>
+    </div>
+    <div class="footer-copyright">COPYRIGHT &copy; 澳门金沙VIP GALAXY RESERVED</div>
+  </div>
+</div>
+
+		<!-- end page-footer -->
+		</div>
+		<!--end mainBody -->
+
+<!-- Share core Javascript -->
+<script src="js/common.js"></script>
+<script src="js/subTab.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/app.js"></script>
+<!-- Javascript for this template -->
+
+<script>
+	$(".langTitle").click(function(){
+		$(this).toggleClass('lang-turn');
+	});
+</script>
+</body>
+</html>

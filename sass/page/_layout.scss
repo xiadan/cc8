@@ -1,0 +1,394 @@
+//主要置中區塊
+.wrapper {
+    @include container-fixed;
+}
+.clearfix {
+    @include clearfix;
+}
+
+//預設區塊寬度及置中 依需求增減
+.page-position,
+.footer {
+    @extend .wrapper;
+}
+
+/* 主要區塊 */
+
+#mainBody{
+    min-width: 1024px;
+}
+
+.page-position {
+    .first &, .about &, .live &, .ball &, .game &, .lottery &, .memberexclusiveii &, .sports & {
+	   position: relative;
+       z-index: 3;
+    }
+}
+
+// HEADER
+.logo {
+	position: absolute;
+  z-index: 0;
+	top: -10px;
+	left: -16px;
+  width: 231px;
+  height: 120px;
+  background: #5B4410;
+  a {
+    display: block;
+    margin: 9px 0 0 16px;
+    @include bg-btn('logo.png');
+  }
+}
+
+#login {
+	float: left;
+}
+
+.login-wrap {
+    position: relative;
+	float: right;
+}
+
+.login-input, .login-btn-wrap {
+	float: left;
+}
+
+.login-btn-wrap {
+    padding: 0 15px;
+    color: $base-khaik;
+    li {
+        display: inline-block;
+        + li {
+            &:before {
+                padding: 0 10px;
+                content: '|';
+            }
+        }
+    }
+    a {
+        line-height: 34px;
+        color: $base-khaik-lighter;
+        &:hover {
+            color: $base-khaik-light;
+        }
+    }
+}
+
+.login-input {
+    display: inline-block;
+    text-align: center;
+    input {
+        display: inline-block;
+        width: 128px;
+        height: 30px;
+        padding: 0 10px;
+        border: 2px solid $base-khaik;
+        background: none;
+        margin:0 1px;
+        color: #B8A47E;
+        @include placeholder($base-khaik-light);
+    }
+    .key {
+    	width: 87px;
+    }
+}
+
+.login-btn {
+	display: inline-block;
+}
+
+.btn-submit {
+	background: $base-khaik;
+	width: 68px;
+	height: 34px;
+	line-height: 34px;
+    margin:0 0 0 5px;
+    color: $base-brown;
+	@include border-radius(3px);
+    @include transition(all .3s ease);
+    &:hover{
+		background-color: $base-brown;
+        color: $base-khaik-light;
+	}
+}
+
+//LOGON
+.logon-acc,
+.logon-list{
+    float: left;
+    line-height: 34px;
+    margin: 0 30px 0 0;
+}
+
+.logon-acc{
+    display: block;
+    @include logon-acc;
+    //logon-acc的基礎設定
+    @include Member-Sub-font(#fff, 1px solid $base-khaik, #fff);
+    /*
+        1. 會員資訊文字顏色
+        2. 中間的分隔線
+        3. 額度轉換按鈕顏色
+        4. Hover的額度轉換按鈕顏色
+    */
+    @include Member-Sub-bg($base-brown, $base-khaik, $base-green, $base-khaik-lighter);
+    /*
+        1. 會員資訊區背景色
+        2. 下方背景色
+        3. 額度轉換按鈕背景顏色
+        4. Hover的額度轉換按鈕背景顏色
+    */
+    .acc-name,
+    .first-balance{
+        margin-left: 12px;
+        font-size: 14px;
+        color: $base-khaik-lighter;
+    }
+    .obalance{
+        margin-left: 4px;
+        i{
+            font-size: 14px;
+            color: $base-khaik-light;
+        }
+    }
+}
+.logon-list {
+    display: block;
+    li {
+        display: inline-block;
+        margin-left: 2px;
+        color: $base-khaik-lighter;
+        a {
+            color: $base-khaik-lighter;
+            >span,
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+.list-dividing {
+    li {
+        &::after {
+            content: '|';
+            display: inline-block;
+            margin-left: 4px;
+            color: $base-khaik-light;
+        }
+        &:last-child::after {
+            display: none;
+        }
+    }
+}
+
+
+// LANG
+.lang-wrap {
+    float: right;
+    font-size: 14px;
+    padding-right: 10px;
+    cursor: pointer;
+    .langTitle {
+        width: 86px;
+        height: 28px;
+        margin: 3px 0;
+        padding:0 10px;
+        line-height: 28px;
+        background: $base-khaik;
+        &::after{
+            content:'';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            margin: 0 0 0 12px;
+            background: image-url('lang_icon.png') no-repeat left center;
+            @include transition(all .3s ease);
+        }
+        &.lang-turn::after{
+            @include rotateX(180deg);
+        }
+        a:hover{
+            color: $base-brown;
+        }
+        .game &{
+            width: 106px;
+        }
+    }
+}
+
+#langOption {
+    position: absolute;
+    width: 106px;
+    right: 10px;
+    top: 34px;
+    z-index: 1;
+    background-color: $base-brown;
+    padding: 10px 0;
+    text-align: center;
+    @include border-radius(0 0 6px 6px);
+    a {
+        display: block;
+        color: $base-khaik-lighter;
+        padding: 10px 0;
+        &:hover{
+            color: $base-khaik;
+        }
+    }
+    .game &{
+        width: 106px;
+    }
+}
+
+//NAV
+.mainnav {
+    float: right;
+    display: block;
+    padding: 12px 0 0 0;
+    @include clearfix;
+    .nav {
+        float: right;
+        margin-left: 40px;
+    }
+    li {
+        position: relative;
+        float: left;
+        text-align: center;
+        a {
+            font-size: 15px;
+            line-height: 51px;
+            display: block;
+            width: 117px;
+            color: #fff;
+            &:hover {
+
+
+            }
+        }
+        span {
+            content:'';
+            position: absolute;
+            display: none;
+            left:50%;
+            bottom:5px;
+            width: 4px;
+            height: 4px;
+            margin: 0 0 0 -2px;
+            background: image-url('nav_arrow.png') no-repeat center bottom;
+        }
+        &:hover span,
+        &.current span {
+            display: block;
+        }
+    }
+}
+
+
+.ele-lsub-group {
+    width: 117px;
+    background: $base-brown;
+    padding: 10px 0;
+    a{
+        display: block;
+        font-size: 14px;
+        color: $base-khaik-lighter;
+        text-align: center;
+        padding: 10px 0;
+        &:hover{
+            color: $base-khaik;
+        }
+    }
+}
+
+//FOOTER
+#page-footer{
+    position: relative;
+    background: #171717;
+    padding: 34px 0;
+    .first &{
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 477px;
+            top: -431px;
+            left: 50%;
+            margin-left: -960px;
+            background: image-url('footer_bg.png') no-repeat center top;
+        }
+    }
+}
+.footer{
+    &-infor{
+        padding-bottom: 43px;
+        li{
+            float: left;
+            text-align: center;
+        }
+        &-title{
+            font-size: 15px;
+            color: $base-green;
+            padding-bottom: 40px;
+        }
+        &-content{
+            width: 340px;
+            text-align: center;
+            height: 116px;
+            vertical-align: middle;
+            display: table-cell;
+            a{
+                position: relative;
+                display: block;
+                top:0;
+                @include transition(all .3s ease);
+            }
+            a:hover{
+                top: 3px;
+            }
+        }
+    }
+    &-logo{
+        width:329px;
+        margin:0 auto;
+        a{
+            position: relative;
+            top: 0;
+            height: 45px;
+            padding:0 30px;
+            vertical-align: middle;
+            display: table-cell;
+            @include transition(all .3s ease);
+        }
+        a:hover{
+            top: 3px;
+        }
+    }
+    &-nav{
+        font-size: 14px;
+        padding: 32px 0 40px 0;
+        text-align: center;
+        li{
+            display: inline-block;
+            padding: 0 15px;
+            background: image-url('footer_nav_line.png') no-repeat right center;
+            a{
+                color: #fff;
+                &:hover{
+                    color: $base-green;
+                }
+            }
+            &:first-of-type{
+                padding-left: 0;
+            }
+            &:last-of-type{
+                background: none;
+                padding-right: 0;
+            }
+        }
+    }
+    &-copyright{
+        text-align: center;
+        color: #fff;
+    }
+}

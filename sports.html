@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html class="sports zh-cn">
+
+<head>
+	<meta charset="UTF-8">
+	<title>体育投注</title>
+  <link rel="shortcut icon" href="image/favicon.ico">
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Share core Javascript -->
+	<script src="js/jquery.js"></script>
+</head>
+
+<body>
+	<div id="mainBody">
+		<!-- begin page-header -->
+		<div id="page-header">
+			<div class="header-top">
+				<div class="page-position">
+					<div class="logo">
+						<a href="index.html"></a>
+					</div>
+					<!-- begin lang-wrap -->
+					<div id="lang-wrap" class="lang-wrap">
+						<div class="langTitle">
+							<a href="#">简体中文</a>
+						</div>
+						<div id="langOption" style="display: none;">
+							<a href="#" class="zh-tw">繁體中文</a>
+							<a href="#" class="en">ENGLISH</a>
+						</div>
+					</div>
+					<!-- end lang-wrap -->
+					<!-- begin login -->
+					<div class="login-wrap">
+						<div id="login">
+							<form class="login-input form-group">
+								<input type="text" placeholder="帐号" class="form-control name">
+								<input type="text" placeholder="密码" class="form-control password">
+								<input type="text" placeholder="验证码" class="form-control key">
+								<a class="login-btn btn-submit" href="index_login.html">登入</a>
+							</form>
+							<div class="login-btn-wrap">
+								<ul>
+									<li><a href="#" class="login-btn btn-joinus">忘记密码</a></li>
+									<li><a href="#" class="getPW">加入会员</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--end login -->
+					<div class="mainnav">
+						<ul class="nav">
+							<li id="LS-fist" class="LS-first"><a href="index.html">首页</a><span></span></li>
+							<li id="LS-ball" class="LS-ball current"><a href="#.html">体育赛事</a>
+								<div id="nav-ball" style="display:none" class="ele-lsub-group">
+                                	<a v-for="todo in todos" :href="todo.link">{{ todo.name }}</a>
+                                </div>
+                                <span></span>
+							</li>
+							<li id="LS-live" class="LS-live"><a href="live.html">视讯直播</a><span></span></li>
+							<li id="LS-game" class="LS-game"><a href="#">电子游艺</a>
+								<div id="nav-game" style="display:none" class="ele-lsub-group">
+                                    <div class="lsub-inner-wrap">
+                                        <a v-for="todo in todos" :href="todo.link">{{ todo.name }}</a>
+                                    </div>
+                                </div>
+								<span></span>
+							</li>
+							<li id="LS-lottery" class="LS-lottery"><a href="lottery.html">彩票游戏</a><span></span></li>
+							<li id="LS-memberexclusiveii" class="LS-memberexclusiveii"><a href="promotions.html">优惠活动</a><span></span></li>
+							<li id="LS-service" class="LS-service"><a href="#">在线客服</a><span></span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- end header-top -->
+		</div>
+		<!--end page-header -->
+
+		<!-- begin page-container -->
+		<div id="page-container">
+			<!--begin page-body -->
+			<div class="page-body">
+				 <!-- begin sports -->
+				<div class="sports-wrap">
+          <!--EST-->
+          <div class="est-wrap">
+            <div id="EST" class="time_text">美東時間：<span id="EST_reciprocal"></span></div>
+          </div>
+          <img src="image/not-use/sport.png" alt="">
+				</div>
+				<!-- end sports -->
+			</div>
+			<!-- end page-body -->
+		</div>
+		<!-- end page-container -->
+
+
+    </div>
+    <!--end mainBody -->
+
+<!-- Share core Javascript -->
+<script src="js/common.js"></script>
+<script src="js/subTab.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/app.js"></script>
+<!-- Javascript for this template -->
+
+<script src="js/main.js"></script>
+<script>
+  $(".langTitle").click(function(){
+    $(this).toggleClass('lang-turn');
+  });
+  show_now();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+// 變數
+// --------------------------------------------------
+//== 顏色
+$base-khaik-lighter  : #D5C8AF;
+$base-khaik-light    : #B8A47E;
+$base-khaik          : #AB9875;
+$base-brown          : #5B4410;
+$base-green          : #46A5B8;
+$base-black          : #595656;
+//
+//## Gray and brand colors for use.
+$gray-darker   : lighten(#000, 13.5%); // #222
+$gray-dark     : lighten(#000, 20%); // #333
+$gray          : lighten(#000, 33.5%); // #555
+$gray-light    : lighten(#000, 46.7%); // #777
+$gray-lighter  : lighten(#000, 93.5%); // #eee
+$brand-primary : darken(#428bca, 6.5%) !default; // #337ab7
+$brand-success : #5cb85c !default;
+$brand-info    : #5bc0de !default;
+$brand-warning : #f0ad4e !default;
+$brand-danger  : #d9534f !default;
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+//** Background color for `<body>`.
+$body-bg       : #FFF !default;
+//** Global text color on `<body>`.
+$text-color    : #222 !default;
+//** Global textual link color.
+$link-color    : #000 !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color: lighten(#000, 40%) !default;
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, and more.
+$font-family-base: arial, STHeiti, "Microsoft YaHei", "微软雅黑", "SimSun", "宋体" !default;
+$font-size-base: 12px !default;
+$line-height-base: normal !default;
+
+
+//頁面寬度
+$container-width: 1024px; //主要置中區塊寬度
+$grid-gutter-width: 0; //主要置中區塊兩邊空隙
+
+
+//目前語系資料夾
+$lang: 'lang/zh-cn/';
+
+//-----------------------------------------------------------------------------------------------------------------------------
+//語系種類
+$lang-kind: false; //false=不使用; Flag=使用國旗
+
+//-----------------------------------------------------------------------------------------------------------------------------
+
+//首頁遊戲圖
+$first-game-format: false; //false=不使用; 遊戲圖圖片格式: png or jpg ; 放置在語系中: pnglang or jpglang
+
+
+//-----------------------------------------------------------------------------------------------------------------------------
+//首頁遊戲圖
+$first-slider: true;
+$first-height: 650px;
+
+

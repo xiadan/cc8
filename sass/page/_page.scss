@@ -1,0 +1,194 @@
+// HEADER
+#page-header {
+	position: relative;
+	.about &, .live &, .ball &, .game &, .lottery &, .memberexclusiveii &, .sports &  {
+        background: image-url('page_header_bg.jpg') no-repeat center top;
+        min-height: 300px;
+	        &::after{
+			content: '';
+			position: absolute;
+			display: block;
+			width: 63px;
+			height: 63px;
+			left: 0;
+			bottom: 0;
+			background: image-url('page_piece.png') no-repeat left top;
+		}
+    }
+  .sports & {
+    background: none;
+  }
+}
+
+#mainBody {
+  .sports & {
+    background: image-url('sports_bg.jpg') repeat-x center top;
+  }
+}
+
+
+
+
+.banner{
+	min-height: 193px;
+	.about &,
+	.live &,
+	.ball &,
+	.game &,
+	.lottery &,
+	.memberexclusiveii & {
+		height: auto;
+        background-repeat: no-repeat;
+        background-position: center top;
+	}
+	$page-banner: live, game, lottery, memberexclusiveii;
+	@each $var in $page-banner{
+		.#{$var} & {
+			background-image: url(../image/lang/zh-cn/title_#{$var}.jpg);
+		}
+	}
+	.about &{
+		background-image: image-url('lang/zh-cn/title_welcome.jpg');
+	}
+	.ball &{
+		background-image: image-url('lang/zh-cn/title_sports.jpg');
+	}
+}
+
+// CONTAINER
+#page-container{
+	background: image-url('page_container_bg.jpg') no-repeat center top;
+	padding-bottom: 56px;
+	.game &{
+		padding-bottom: 0;
+		background-position: center 138px;
+	}
+  .sports & {
+    background: none;
+    background-color: transparent !important;
+    padding: 0;
+  }
+}
+.page-body{
+	position: relative;
+	top: -30px;
+	@extend .wrapper;
+	.game &{
+		width:1000px;
+		margin-top: -138px;
+	}
+	.about &{
+		top:0;
+	}
+  .sports & {
+    margin-top: -138px;
+  }
+}
+
+// ABOUT
+.about-title{
+	position: absolute;
+	width: 559px;
+	height:306px;
+	top: 0;
+	left: -273px;
+	background: image-url('lang/zh-cn/sidebar_top.png') no-repeat left top;
+	z-index: 0;
+}
+#sidebar{
+	float: left;
+	width: 239px;
+	text-align: center;
+}
+.sidemenu{
+	padding-top: 255px;
+	background: image-url('sidebar_bg_y.jpg') repeat-y left top;
+	li{
+		font-size: 14px;
+		font-weight: bold;
+		padding: 18px 0;
+		background: image-url('sidebar_line.jpg') no-repeat center bottom;
+		position: relative;
+		z-index: 4;
+		a{
+			color: #000;
+			&:hover, &.current{
+				color: $base-green;
+			}
+		}
+	}
+}
+.article{
+	float: left;
+	width: 689px;
+	padding: 105px 40px 40px 56px;
+	font-size: 15px;
+	font-weight: bold;
+	color: $base-black;
+	line-height: 30px;
+	p{
+		padding-bottom: 30px;
+	}
+}
+
+// CASINO
+//                     1              2            3         4     5     6     7     8      9      0     11       12
+@include color-setC($base-brown, $base-khaik, $base-green, #000, #ddd, #ddd, #000, #eee, $base-black, #000, #666, $base-green);
+
+/*
+	color-setC
+	    1   標題的文字顏色
+	    2   副標題的文字顏色
+	    3   副標題的數字顏色
+	    4   搜尋按鈕放大鏡圖片顏色
+	    5   Active的搜尋按鈕放大鏡圖片顏色
+	    6   搜尋按鈕底色
+	    7   Active的搜尋按鈕底色
+	    8   搜尋框底色
+	    9   鍵入的搜尋文字顏色
+	    10  搜尋框的預設文字顏色"請輸入遊戲名稱"
+	    11  列表icon顏色
+	    12  Active的列表icon顏色
+*/
+
+// CASINO BANNER
+.ele-gamebanner-wrap .rslides_tabs {
+    background: rgba(0, 0, 0, .5);
+    border-radius: 4px;
+    padding: 3px 5px;
+}
+@include color-setA($base-khaik-lighter, $base-khaik-lighter);
+
+/*
+	color-setA
+    1   Banner切換圖片的按鈕顏色
+    2   當前的Banner切換圖片的按鈕顏色
+
+ */
+
+// PROMOTIONS
+.memberexclusiveii-wrap {
+    .promotionsImg {
+    	position: relative;
+        display: block;
+        width: image-width('not-use/promotion01.png');
+        height: image-height('not-use/promotion01.png');
+        @include transition(all .3s ease);
+        margin: 0 auto 15px;
+    }
+    @for $i from 1 through 3 {
+        .promotions0#{$i} {
+            background: image-url('not-use/promotion0#{$i}.png') no-repeat;
+            &:hover {
+				background: image-url('not-use/promotion0#{$i}_over.png') no-repeat;
+            }
+        }
+    }
+}
+
+// SPORTS
+.est-wrap {
+  float: right;
+  line-height: 30px;
+  color: #000;
+}

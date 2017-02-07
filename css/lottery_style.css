@@ -1,0 +1,840 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: 微軟正黑體;
+  font-size: 12px;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.ele-lotteryHALL-wrap {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+/*彩票遊戲*/
+.ele-lottery-alert {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.ele-lottery-alert-bg {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 900px;
+  height: 700px;
+  z-index: 3;
+}
+.ele-lottery-alert-close {
+  position: absolute;
+  top: 50px;
+  right: 38px;
+  width: 18px;
+  height: 18px;
+  background: url("../image/lottery/close01.png");
+  cursor: pointer;
+  z-index: 4;
+}
+.ele-lottery-alert-close:hover {
+  background-position: bottom;
+}
+
+/*====================================================== 左邊區塊 */
+.ele-lottery-left-wrap {
+  position: relative;
+}
+@media screen and (min-width: 769px) {
+  .ele-lottery-left-wrap {
+    float: left;
+    width: 66.6666%;
+    height: 706px;
+  }
+  .ele-lottery-left-wrap:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-right: 1px solid #000;
+  }
+}
+.ele-lottery-main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.ele-lottery-login {
+  display: block;
+  height: 100%;
+  background: url('../image/lottery/lang/zh-cn/lotteryLobby_login_m.jpg') center top no-repeat;
+  background-size: 100% auto;
+  cursor: pointer;
+}
+.ele-lottery-login img {
+  max-width: 100%;
+  height: auto;
+}
+.ele-lottery-login:hover {
+  background-image: url('../image/lottery/lang/zh-cn/lotteryLobby_login_m_h.jpg');
+}
+
+/* 廣宣 */
+.ele-lottery-banner {
+  border-top: 1px solid #000;
+}
+@media screen and (min-width: 769px) {
+  .ele-lottery-banner {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+.ele-lottery-slider {
+  display: none;
+  position: relative;
+  width: 100%;
+  -ms-touch-action: pan-y;
+}
+.ele-lottery-slider-wrapper {
+  display: none;
+  position: relative;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -ms-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+.ele-lottery-slider-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.ele-lottery-slider-wrapper-outer.autoHeight {
+  -moz-transition-property: height;
+  -o-transition-property: height;
+  -webkit-transition-property: height;
+  transition-property: height;
+  -moz-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+.ele-lottery-slider-item {
+  float: left;
+}
+.ele-lottery-slider-page, .ele-lottery-slider-buttons div {
+  cursor: pointer;
+}
+.ele-lottery-slider-wrapper, .ele-lottery-slider-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -ms-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+.ele-lottery-slider-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#ele-lottery-slider .ele-lottery-slider-item div {
+  width: 100%;
+  margin: 0 auto;
+}
+#ele-lottery-slider .ele-lottery-slider-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ele-lottery-slider-controls {
+  text-align: center;
+}
+.ele-lottery-slider-controls.clickable div:hover {
+  filter: Alpha(Opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+  text-decoration: none;
+}
+.ele-lottery-slider-page {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+}
+.ele-lottery-slider-page span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  background: url('../image/lottery/slider_nav_circle.png') 0 0 repeat-x;
+}
+.ele-lottery-slider-page:hover span, .ele-lottery-slider-page.active span {
+  background-position: 0 bottom;
+}
+.ele-lottery-slider-buttons {
+  display: none;
+}
+.ele-lottery-slider-pagination {
+  background: url('../image/lottery/slider_nav_bg.png') 0 50% repeat-x;
+  position: absolute;
+  z-index: 1;
+  bottom: 10px;
+  right: 18px;
+  width: auto;
+  text-align: right;
+  float: left;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 6px;
+}
+.ele-lottery-slider-pagination:before, .ele-lottery-slider-pagination:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 4px;
+  height: 28px;
+  background: url('../image/lottery/slider_nav_bg.png') no-repeat;
+}
+.ele-lottery-slider-pagination:before {
+  left: -4px;
+  background-position: 0 0;
+}
+.ele-lottery-slider-pagination:after {
+  right: -4px;
+  background-position: 0 100%;
+}
+
+.owl-origin {
+  -webkit-perspective: 1200px;
+  -webkit-perspective-origin-x: 50%;
+  -webkit-perspective-origin-y: 50%;
+  -moz-perspective: 1200px;
+  -moz-perspective-origin-x: 50%;
+  -moz-perspective-origin-y: 50%;
+  perspective: 1200px;
+}
+
+.owl-fade-out {
+  z-index: 10;
+  -moz-animation: fadeOut 0.7s both ease;
+  -webkit-animation: fadeOut 0.7s both ease;
+  animation: fadeOut 0.7s both ease;
+}
+
+.owl-fade-in {
+  -moz-animation: fadeIn 0.7s both ease;
+  -webkit-animation: fadeIn 0.7s both ease;
+  animation: fadeIn 0.7s both ease;
+}
+
+/* Keyframes */
+@-moz-keyframes empty {
+  0% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes empty {
+  0% {
+    opacity: 1;
+  }
+}
+@keyframes empty {
+  0% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*====================================================== 右邊區塊*/
+.ele-lottery-right-wrap {
+  width: 100%;
+}
+@media screen and (min-width: 504px) {
+  .ele-lottery-right-wrap .ele-lottery-hotgame, .ele-lottery-right-wrap .ele-lottery-ranking {
+    float: left;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .ele-lottery-right-wrap {
+    float: left;
+    width: 33.3333%;
+    min-height: 706px;
+  }
+  .ele-lottery-right-wrap .ele-lottery-hotgame, .ele-lottery-right-wrap .ele-lottery-ranking {
+    float: none;
+    width: auto;
+  }
+}
+
+/*top icon*/
+.ele-lottery-hotgame-hot {
+  width: 100%;
+  height: 16px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: right;
+  color: #fff;
+  background: url('../image/lottery/lottery_game_bg.png') #393939 right top no-repeat;
+}
+.ele-lottery-tag-text {
+  padding-right: 26px;
+}
+
+/*熱門遊戲*/
+.ele-lottery-hotgame {
+  position: relative;
+}
+.ele-lottery-hotgame li {
+  text-align: left;
+}
+.ele-lottery-hotgame li .ele-item-arrow, .ele-lottery-hotgame li .ele-item-quest {
+  position: absolute;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+}
+.ele-lottery-hotgame li .ele-item-arrow {
+  top: 14px;
+  background: url('../image/lottery/lottery_arrow_icon.png') center no-repeat;
+}
+.ele-lottery-hotgame li .ele-item-quest {
+  top: 18px;
+  background: url('../image/lottery/lottery_quest_icon.png') left top no-repeat;
+}
+.ele-lottery-hotgame-first {
+  position: relative;
+  height: 58px;
+  color: #FFF;
+  background-color: #393939;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+.ele-lottery-hotgame-first .ele-item-name {
+  line-height: 56px;
+}
+.ele-lottery-hotgame-item {
+  position: relative;
+  height: 66px;
+  color: #FFF;
+  background-color: #393939;
+  border-top: 1px solid #545454;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+.ele-lottery-hotgame-item:hover {
+  background-color: #2A2A2A;
+}
+.ele-lottery-hotgame-item:hover:after {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background-color: #4FABE9;
+}
+.ele-lottery-hotgame-item:hover:before {
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  width: 0;
+  height: 0;
+  margin-top: -4px;
+  border-style: solid;
+  border-width: 4px 0 4px 4px;
+  border-color: transparent transparent transparent #4FABE9;
+}
+@media screen and (min-width: 769px) {
+  .ele-lottery-hotgame li .ele-item-arrow {
+    top: 10px;
+  }
+  .ele-lottery-hotgame li .ele-item-quest {
+    top: 13px;
+  }
+  .ele-lottery-hotgame-first {
+    height: 48px;
+  }
+  .ele-lottery-hotgame-first .ele-item-name {
+    line-height: 48px;
+  }
+  .ele-lottery-hotgame-item {
+    height: 56px;
+  }
+  .ele-lottery-hotgame-item .ele-item-name {
+    line-height: 56px;
+  }
+}
+
+/*熱門遊戲名稱*/
+.ele-item-name {
+  display: block;
+  padding-left: 20px;
+  max-width: 180px;
+  font-size: 16px;
+  line-height: 64px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ele-item-num {
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  max-width: 130px;
+  color: #FFF;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/*連續開獎&連續為開*/
+/*tab標籤*/
+.ele-lottery-ranking-tabs {
+  width: 100%;
+  background-color: #2a2a2a;
+  cursor: pointer;
+  overflow: hidden;
+}
+.ele-lottery-ranking-tabs li {
+  width: 50%;
+  height: 72px;
+  line-height: 72px;
+  font-size: 16px;
+  text-align: center;
+  color: #E5E5E5;
+  float: left;
+}
+.ele-lottery-ranking-tabs .current-tab {
+  background-color: #f8f8f8;
+  color: #323B47;
+}
+@media screen and (min-width: 769px) {
+  .ele-lottery-ranking-tabs li {
+    height: 52px;
+    line-height: 52px;
+  }
+}
+
+/*列表*/
+.ele-lottery-game-card {
+  display: none;
+  background-color: #f8f8f8;
+}
+.ele-lottery-game-card.current-card {
+  display: block;
+}
+.ele-lottery-game-card li {
+  position: relative;
+  height: 67px;
+  color: #222832;
+  cursor: pointer;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #E9E9E9;
+}
+.ele-lottery-game-card li:first-child {
+  border-top: 0;
+}
+.ele-lottery-game-card li:hover .ele-item-number {
+  background-color: #DA3B2E;
+  color: #FFF;
+}
+.ele-lottery-game-card li:hover .ele-item-time {
+  color: #FFF;
+}
+@media screen and (min-width: 769px) {
+  .ele-lottery-game-card li {
+    height: 58px;
+  }
+  .ele-lottery-game-card li .ele-item-name {
+    line-height: 40px;
+  }
+  .ele-lottery-game-card li .ele-item-number {
+    height: 54px;
+  }
+  .ele-lottery-game-card li .ele-item-number > span {
+    margin-top: 12px;
+  }
+}
+
+.item-left-wrap {
+  float: left;
+  max-width: 180px;
+}
+
+/*小字*/
+.ele-item-game {
+  position: absolute;
+  display: block;
+  left: 20px;
+  bottom: 11px;
+  max-width: 180px;
+  color: #6DA7DF;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/*數字*/
+.ele-item-number {
+  float: right;
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  color: #505F73;
+  border-left: 1px solid #E9E9E9;
+}
+.ele-item-number > span {
+  display: block;
+  margin-top: 17px;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+/*期*/
+.ele-item-time {
+  display: block;
+  color: #222;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.ranking-1 .ele-item-number, .ranking-1 .ele-item-game, .ranking-1 .ele-item-time {
+  color: #DF575A;
+}
+
+.is-login .ranking-1:before {
+  position: absolute;
+  top: 0;
+  right: 45px;
+  width: 43px;
+  height: 51px;
+  content: url("../image/lottery/btn_clickalert.png");
+  z-index: 1;
+}
+
+/*倒數*/
+.ele-lottery-timer {
+  height: 28px;
+  width: 28px;
+}
+
+.ele-lottery-svg-circle {
+  stroke: #1BBE9C;
+  fill: transparent;
+  stroke-dasharray: 100 100;
+  stroke-dashoffset: 0;
+  stroke-width: 2;
+  transition: stroke-dashoffset 1s;
+  transition-timing-function: linear;
+}
+
+.ele-item-countdown-start span {
+  color: #18C49F;
+}
+.ele-item-countdown-start.ele-item-svg-stop span {
+  color: #85909B;
+}
+
+.ele-item-countdown-stop span {
+  color: #85909B;
+}
+
+.ele-item-svg-start {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #1BBE9C;
+}
+
+.ele-item-svg-stop {
+  fill: #D95354;
+}
+.ele-item-svg-stop .ele-lottery-svg-circle {
+  stroke: #D95354;
+}
+
+.game-login-wrap {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+.game-login-wrap .game-login-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 45.188rem;
+  height: 28.125rem;
+  margin: -14.063rem 0 0 -22.625rem;
+  background: url("../image/lottery/login_bg01.png");
+}
+.game-login-wrap .game-login-bg form {
+  width: 100%;
+  height: 100%;
+  padding-left: 23.75rem;
+  padding-top: 5.313rem;
+  background: url("../image/lottery/login_bg02.png") 50% 50% no-repeat;
+}
+.game-login-wrap .game-login-bg form p {
+  position: relative !important;
+  display: block !important;
+  float: none !important;
+}
+.game-login-wrap .glogin-title {
+  background: url("../image/lottery/login_top_icon.png") 0 0 no-repeat;
+  width: 15.625rem;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  color: #34caae;
+  font-size: 0.875rem;
+  text-indent: 2.438rem;
+  margin-bottom: 0.813rem;
+  text-shadow: 1px 1px 2px #000;
+}
+.game-login-wrap .login-unit {
+  width: 15.5rem !important;
+  height: 1.75rem !important;
+  margin: 0 0 0.75rem 0 !important;
+  padding: 0 !important;
+  background: url("../image/lottery/loginInput_icon.png") #FFF no-repeat !important;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #CCC !important;
+}
+.game-login-wrap .login-unit.login-unit-pwd {
+  background-position: 0 -28px !important;
+}
+.game-login-wrap .login-unit.login-unit-chk {
+  background-position: 0 -56px !important;
+}
+.game-login-wrap .login-unit .login-placeholder {
+  position: absolute;
+  left: 2.06rem;
+  top: 0;
+  line-height: 1.875rem;
+  color: #8c8c8c;
+  cursor: text;
+}
+.game-login-wrap .login-input {
+  float: left !important;
+  position: static !important;
+  width: 15.5rem !important;
+  height: 1.75rem !important;
+  padding: 0.375rem 0.75rem 0.375rem 1.875rem !important;
+  margin: 0 !important;
+  font-size: 0.813rem !important;
+  color: #555 !important;
+  border: none !important;
+  outline: none !important;
+  background: none !important;
+  line-height: 1rem !important;
+  box-sizing: border-box !important;
+}
+.game-login-wrap .login-input.login-acc {
+  padding: 0.375rem 3rem 0.375rem 1.875rem !important;
+}
+.game-login-wrap .acc-unicode {
+  position: absolute;
+  right: 0.563rem;
+  top: 0;
+  line-height: 1.688rem;
+  color: #555;
+  font-size: 0.875rem;
+}
+.game-login-wrap .login-submit {
+  float: none !important;
+  position: static !important;
+  background: none !important;
+  width: 15.625rem !important;
+  height: 1.875rem !important;
+  line-height: normal !important;
+  margin: 0 0 0.688rem !important;
+  padding: 0 !important;
+  font-size: 0.813rem !important;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #FFF !important;
+  box-sizing: border-box !important;
+  color: #FFF !important;
+  cursor: pointer !important;
+}
+.game-login-wrap .glogin-forget a {
+  display: block;
+  width: 15.625rem;
+  line-height: 1.75rem;
+  text-align: center;
+  font-size: 0.75rem;
+  text-decoration: underline;
+  color: #CCC;
+  margin: 0 0 0.625rem 0;
+}
+.game-login-wrap .glogin-joinmem a {
+  display: block;
+  width: 15.625rem;
+  line-height: 1.875rem;
+  color: #FFF;
+  font-size: 0.875rem;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 2px solid #129678;
+  background: #18c49f;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.game-login-wrap .glogin-joinmem a:hover {
+  background: #38e7bf;
+}
+.game-login-wrap .glogin-close {
+  background: url("../image/lottery/login_close.png") no-repeat;
+  position: absolute;
+  width: 1.75rem;
+  height: 1.75rem;
+  top: 3.438rem;
+  right: 3.438rem;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

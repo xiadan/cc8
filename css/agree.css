@@ -1,0 +1,87 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+/*---------------------------- 基本變數 end ------------------------------------------*/
+/*---------------------------- 背景設定 ----------------------------------------------*/
+/*---------------------------- 背景設定 end ------------------------------------------*/
+/*---------------------------- 文字屬性 ----------------------------------------------*/
+/*---------------------------- 文字屬性 end ------------------------------------------*/
+/*---------------------------- BOX 區塊屬性 ------------------------------------------*/
+/*---------------------------- BOX 區塊屬性 end --------------------------------------*/
+/*---------------------------- 各類選單屬性 -------------------------------------------*/
+/*---------------------------- 各類選單屬性 end ---------------------------------------*/
+/*agree 同意頁面-------------------------------------------------start*/
+/* 頁面寬度 */
+body { font-size: 12px; font-family: STHeiti,"Microsoft YaHei", "微软雅黑", "SimSun", "宋体",arial; }
+
+#logo, .rule-wrap, .agree-copyright { width: 800px; margin: 0 auto; clear: both; }
+
+.agree-title { display: block; text-align: center; }
+
+.agree-btn { position: relative; text-align: center; }
+.agree-btn a { display: inline-block !important; text-decoration: none; }
+
+.agree-list { position: relative; text-align: center; }
+.agree-list a { display: inline-block !important; text-decoration: none; }
+
+.agree-content { overflow: hidden; }
+.agree-content ul { padding: 0 20px; }
+.agree-content ul li { margin: 0 auto; width: 96%; margin-bottom: 15px; }
+.agree-content h2 { float: left; display: block; width: 800px; text-align: center; }
+.agree-content h3 { float: left; display: block; width: 800px; height: 36px; text-align: center; margin-bottom: 15px; }
+
+.agree-link a { clear: both; float: right; text-decoration: none; margin: 0 25px 0 0; }
+
+.agree-copyright { text-align: center; }
+
+/*agree 同意頁面-------------------------------------------------end*/
+/*以下開放編譯*/
+/*背景色*/
+body { background: url('../image/agree_bg.jpg?1486364067') center top no-repeat; }
+
+#agree-bg { min-width: 800px; }
+
+/*底圖*/
+/*logo*/
+#logo { width: 800px; height: 120px; background: url('../image/rule_logo.png?1486363861') no-repeat; }
+
+.rule-wrap { margin-top: 83px; margin-bottom: 36px; padding-bottom: 24px; background: #EAEAEA; }
+
+/*協議與規則*/
+.agree-title { font-size: 14px; font-weight: bold; line-height: 39px; color: #FFF; background: #827252; }
+
+/*同意與不同意按鈕*/
+.agree-btn a { margin: 24px 15px; width: 100px; height: 30px; line-height: 30px; font-size: 13px; color: #000; background-color: #AB946D; }
+.agree-btn a:hover { color: #FFF; background-color: #8A7A5B; }
+
+/*同意頁面-選單按鈕*/
+.agree-list { margin-top: 4px; }
+.agree-list a { margin: 8px 30px; font-size: 12px; line-height: 2; color: #222; text-decoration: underline; }
+.agree-list a:hover { color: #47A6BA; }
+
+.agree-content { font-size: 12px; line-height: 1.8; color: #111; }
+.agree-content ul { list-style-type: decimal; text-align: left; }
+
+.agree-link a { font-size: 18px; line-height: 3; color: #111; }
+
+.agree-copyright { font-size: 12px; line-height: 18px; color: #111; }
+
+.agree-container { text-align: center; }
+.agree-container h2 { margin-bottom: 6px; font-size: 15px; line-height: 48px; color: #5E5E5E; font-weight: bold; }
+
+/*# sourceMappingURL=agree.css.map */

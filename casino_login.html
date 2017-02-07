@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html class="game zh-cn">
+
+<head>
+	<meta charset="UTF-8">
+	<title>电子游艺</title>
+	<!-- Share core CSS -->
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Share core Javascript -->
+	<script src="js/jquery.js"></script>
+</head>
+
+<body>
+	<div id="mainBody">
+		<!-- begin page-header -->
+		<div id="page-header">
+			<div class="header-top">
+				<div class="page-position">
+					<div class="logo">
+						<a href="index.html"></a>
+					</div>
+					<!-- begin lang-wrap -->
+					<div id="lang-wrap" class="lang-wrap">
+						<div class="langTitle">
+							<a href="#">简体中文</a>
+						</div>
+						<div id="langOption" style="display: none;">
+							<a href="#" class="zh-tw">繁體中文</a>
+							<a href="#" class="en">ENGLISH</a>
+						</div>
+					</div>
+					<!-- end lang-wrap -->
+					<!-- begin login -->
+					<div class="login-wrap">
+						<div id="login">
+							<div class="logon-acc">
+                                <div class="acc-name"><span>帐号 :</span><strong>admin</strong></div>
+                                <div class="first-balance"><span>余额 :</span><strong>168.08</strong></div>
+                                <div class="obalance"><a href="###" class="MemberDate"><i class="fa fa-plus-square"></i></a>
+                                    <div id="Member-Sub">
+                                        <div class="MemberDate">
+                                            <ul>
+                                                <li>体育投注余额：100.08</li>
+                                                <li>AG视讯余额：---</li>
+                                                <li>歐博視訊餘額：68.00</li>
+                                            </ul>
+                                            <div class="MemberChange"><a href="###" class="btn_change">额度转换</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="logon-list list-dividing">
+                                <li><a href="#">会员中心</a></li>
+                                <li><a href="#">线上存款</a></li>
+                                <li><a href="#">线上取款</a></li>
+                                <li><a href="#">额度转换</a></li>
+                                <li><a href="index.html">登出</a></li>
+                            </ul>
+						</div>
+					</div>
+					<!--end login -->
+					<div class="mainnav">
+						<ul class="nav">
+							<li id="LS-fist" class="LS-first"><a href="index.html">首页</a><span></span></li>
+							<li id="LS-ball" class="LS-ball"><a href="#.html">体育赛事</a>
+								<div id="nav-ball" style="display:none" class="ele-lsub-group">
+                                	<a v-for="todo in todos" :href="todo.link">{{ todo.name }}</a>
+                                </div>
+                                <span></span>
+							</li>
+							<li id="LS-live" class="LS-live"><a href="live.html">视讯直播</a><span></span></li>
+							<li id="LS-game" class="LS-game current"><a href="#">电子游艺</a>
+								<div id="nav-game" style="display:none" class="ele-lsub-group">
+                                    <div class="lsub-inner-wrap">
+                                        <a v-for="todo in todos" :href="todo.link">{{ todo.name }}</a>
+                                    </div>
+                                </div>
+								<span></span>
+							</li>
+							<li id="LS-lottery" class="LS-lottery"><a href="lottery.html">彩票游戏</a><span></span></li>
+							<li id="LS-memberexclusiveii" class="LS-memberexclusiveii"><a href="promotions.html">优惠活动</a><span></span></li>
+							<li id="LS-service" class="LS-service"><a href="#">在线客服</a><span></span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- end header-top -->
+		</div>
+		<!--end page-header -->
+
+		<!-- begin page-container -->
+		<div id="page-container">
+			<!--begin page-body -->
+			<div class="page-body">
+				 <!-- begin casino -->
+				<div class="game-wrap">
+          <!-- banner -->
+<div id="js-ele-gamebanner" class="ele-gamebanner-wrap clearfix">
+    <ul class="ele-gamebanner-slideshow">
+        <li>
+            <img src="image/game/not-use/ad119.jpg" />
+        </li>
+        <li>
+            <img src="image/game/not-use/ad118.jpg" />
+        </li>
+        <li>
+            <img src="image/game/not-use/ad117.jpg" />
+    </ul>
+</div>
+<script src="js/rwd.slideshow.js"></script>
+<script type="text/javascript">
+$(".ele-gamebanner-slideshow").responsiveSlides({
+    pager: true
+});
+</script>
+
+          <?php
+    include 'json.php';
+?>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+        <title>电子游艺</title>
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="css/casino_style.css">
+    </head>
+
+    <body>
+        <!--casino-->
+        <div class="elenew-warp">
+            <div class="elenew-container">
+                <!--main content start-->
+                <div class="elenew-main">
+                    <div class="gamenew-menu-bg clearfix">
+                        <div class="" id="gamenew-menu-placeholder">
+                            <div class="gamenew-menu-fixed">
+                                <div class="gamenew-menu-bgcolor">
+                                    <div id="gamenew-menu" class="gamenew-menu gamenew-hall-5">
+                                        <div id="elenew-game-nav" class="elenew-game-nav">
+                                            <div class="elenew-gn-btn">
+                                                <div class="gamenew-logo-bb"></div>
+                                            </div>
+                                            <div class="elenew-gn-wrap">
+                                                <div class="elenew-gn-innerwrap clearfix">
+                                                    <div class="elenew-game-menu1">
+                                                        <a href="#" class="elenew-gm-1" id="gm-no-2" data-games="30101,5068,5095,5904,5905,5902,5901,5837,5404,5106,5043,5058" data-num="40">
+                                                            <span class="gm-icon gm-icon-2"></span>
+                                                            <span class="gm-name">热门游戏</span>
+                                                        </a>
+                                                        <a href="#" class="elenew-gm-1" id="gm-no-1" data-games="5107,5905,5109,15022,5105,5010,5043,5044,5009,5065,5066,5064,5084,5063,5008,5006,5007,5406,5028,5005" data-num="20">
+                                                            <span class="gm-icon gm-icon-1"></span>
+                                                            <span class="gm-name">最新游戏</span>
+                                                        </a>
+                                                        <a href="#" class="elenew-gm-1 gm-active" id="gm-no-81" data-games="5016,5019,5601,5043,5028,5059,5837,5106,5831,5821,5092,5406,5058,5030,5094,5404,5006,5062,5202,5823" data-num="20">
+                                                            <span class="gm-icon gm-icon-81"></span>
+                                                            <span class="gm-name">累积彩池</span>
+                                                        </a>
+                                                        <a href="#" class="elenew-gm-1" id="gm-no-85" data-games="5070,5901,5080,5902,5402,5835,5011,5106,5404,15022,5405,5018,5093,5039,5094,5049,5406,5407,5403,5050,5047,5203,5401,5048" data-num="24">
+                                                            <span class="gm-icon gm-icon-85"></span>
+                                                            <span class="gm-name">特色游戏</span>
+                                                        </a>
+                                                        <a href="#" class="elenew-gm-1" id="gm-no-5" data-games="5109,5034,5035,5039,5041,5073,5076,5077,5078,5083,5089,5105,5107,5103,5115,5116,5117,5118,5131,5088" data-num="20">
+                                                            <span class="gm-icon gm-icon-5"></span>
+                                                            <span class="gm-name">桌上游戏</span>
+                                                        </a>
+                                                        <a href="#" class="elenew-gm-1" id="gm-no-82" data-games="5070,5040,5080,5057,5061,5058,5073,5076,5077,5078,5079,5103,5083,5084,5013,5019" data-num="16">
+                                                            <span class="gm-icon gm-icon-82"></span>
+                                                            <span class="gm-name">街机游戏</span>
+                                                        </a>
+                                                        <a href="#" class="elenew-gm-1" id="gm-no-83" data-games="5707,5706,5705,5704,5703,5701" data-num="6">
+                                                            <span class="gm-icon gm-icon-83"></span>
+                                                            <span class="gm-name">刮刮乐</span>
+                                                        </a>
+                                                        <a href="#" class="elenew-gm-1" id="gm-no-84" data-games="5005,5006,5007,5008,5009,5010,5011,5012,5013,5014,5015,5016,5017,5018,5019,5020,5025,5026,5027,5028,5029,5030,5034,5035,5039,5040,5041,5043,5044,5047,5048,5049,5050,5057,5058,5059,5060,5061,5062,5063,5064,5065,5066,5068,5070,5073,5076,5077,5078,5079,5080,5083,5084,5088,5089,5091,5092,5093,5094,5095,5107,5103,5105,5106,5109,5115,5116,5117,5118,5131,5201,5202,5203,5204,5401,5402,5403,5404,5405,5406,5407,5601,5701,5703,5704,5705,5706,5707,5801,5802,5803,5804,5805,5806,5808,5809,5810,5811,5821,5823,5824,5825,5826,5827,5828,5831,5832,5833,5835,5836,5837,5901,5902,5904,5905,15022,30101" data-num="114">
+                                                            <span class="gm-icon gm-icon-84"></span>
+                                                            <span class="gm-name">全部</span>
+                                                        </a>
+                                                        <a href="#" class="elenew-gm-1" id="gm-no-91" data-games="15022" data-num="1">
+                                                            <span class="gm-icon gm-icon-91"></span>
+                                                            <span class="gm-name">捕鱼机</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="elenew-game-menu2">
+                                                        <a href="#" id="gm-no-3" class="elenew-gm-1" data-games="5905,5010,5005,5044,5043,5006,5007,5008,5009,5011,5012,5066,5064,5065,5063,5601,5406,5106,5407,5405,5404,5095,5403,5402,5030,5029,5401,5047,5094,5049,5062,5050,5201,5202,5203,5020,5019,5048,5093,5061,5057,5058,5060,5059,5028,5025,5092,5018,5091,5017,5016,5014,5013,5027,5204,5026,5015,5836,5835,5828,5827,5826,5825,5824,5823,5810,5809,5808,5806,5805,5804,5803,5802,5833,5832,5831,5821,5811,5801,5837" data-num="80">
+                                                            <span class="gm-icon gm-icon-3"></span><span class="gm-name">老虎机</span>
+                                                        </a>
+                                                        <a href="#" id="gm-subno-56" class="elenew-gm-2" data-games="5064,5065,5066,5063">
+                                                            <span class="gm-name">5线以下</span><span class="gm-num">4</span>
+                                                        </a>
+                                                        <a href="#" id="gm-subno-16" class="elenew-gm-2" data-games="5044,5043,5007,5058,5057,5061,5062,5060,5059">
+                                                            <span class="gm-name">8线</span><span class="gm-num">9</span>
+                                                        </a>
+                                                        <a href="#" id="gm-subno-17" class="elenew-gm-2" data-games="5106,5095,5093,5092,5091,5094">
+                                                            <span class="gm-name">9线</span><span class="gm-num">6</span>
+                                                        </a>
+                                                        <a href="#" id="gm-subno-18" class="elenew-gm-2" data-games="5028,5030,5029,5020,5050,5048,5049,5047,5027,5025,5026,5204">
+                                                            <span class="gm-name">20线</span><span class="gm-num">12</span>
+                                                        </a>
+                                                        <a href="#" id="gm-subno-19" class="elenew-gm-2" data-games="5010,5005,5019,5013,5014,5016,5018,5203,5202,5201,5011,5012,5017,5015">
+                                                            <span class="gm-name">25线</span><span class="gm-num">14</span>
+                                                        </a>
+                                                        <a href="#" id="gm-subno-57" class="elenew-gm-2" data-games="5407,5405,5404,5403,5402,5401">
+                                                            <span class="gm-name">40线</span><span class="gm-num">6</span>
+                                                        </a>
+                                                        <a href="#" id="gm-subno-37" class="elenew-gm-2" data-games="5905,5009,5008,5406,5601,5006">
+                                                            <span class="gm-name">其他线</span><span class="gm-num">6</span>
+                                                        </a>
+                                                        <a href="#" id="gm-subno-13" class="elenew-gm-2" data-games="5837,5835,5823,5825,5802,5803,5804,5805,5806,5808,5809,5810,5824,5826,5827,5828,5836,5801,5811,5821,5831,5832,5833">
+                                                            <span class="gm-name">经典老虎机</span><span class="gm-num">23</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="elenew-gm-bottom clearfix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--数字翻牌-->
+                                        <div class="elenew-gamejp-wrap">
+                                            <div class="elenew-menu-jp">
+                                                <p><a class="elenew-jp-explain" href="#" title="观看彩金说明" data-hall="bbin">观看彩金说明</a></p>
+                                                <div class="elenew-counter-wrap">
+                                                    <div id="c1" class="elenew-counter-container default"></div>
+                                                </div>
+                                                <!--flipcounter-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamenew-menu-trace clearfix">
+                            <div class="elenew-live-trace">
+                                <span class="elenew-trace-title">电子游艺</span>
+                                <span class="elenew-trace-sub" style="">
+                            <span class="red">&gt;&gt;</span>
+                                <span class="trace-0">
+                            <span class="gamenew-trace gamenew-trace-0">
+                            <span class="gamenew-trace-total"> <a href="#" data-id="84" title="全部"> <span class="gm-name">全部</span> </a>
+                                </span>
+                                <span>(<b class="gamenew-trace-num">116</b>)</span>
+                                </span>
+                                </span>
+                                <span class="trace-1">
+                            <span>&gt;</span>
+                                <span class="gamenew-trace gamenew-trace-1">
+                            <span class="gamenew-trace-option" style="display: none;">
+                            <a href="#" data-id="2" title="热门游戏"><span class="gm-name">热门游戏</span></a>
+                                <a href="#" data-id="1" title="最新游戏"><span class="gm-name">最新游戏</span></a>
+                                <a href="#" data-id="81" title="累积彩池"><span class="gm-name">累积彩池</span></a>
+                                <a href="#" data-id="85" title="特色游戏"><span class="gm-name">特色游戏</span></a>
+                                <a href="#" data-id="3" title="老虎机"><span class="gm-name">老虎机</span></a>
+                                <a href="#" data-id="5" title="桌上游戏"><span class="gm-name">桌上游戏</span></a>
+                                <a href="#" data-id="82" title="街机游戏"><span class="gm-name">街机游戏</span></a>
+                                <a href="#" data-id="83" title="刮刮乐"><span class="gm-name">刮刮乐</span></a>
+                                <a href="#" data-id="91" title="捕鱼机"><span class="gm-name">捕鱼机</span></a>
+                                </span>
+                                <span class="gamenew-trace-current">热门游戏</span>
+                                <span>(<b class="gamenew-trace-num">40</b>)</span>
+                                </span>
+                                </span>
+                                <span class="trace-2" style="display: none;">
+                                <span>&gt;</span>
+                                <span class="gamenew-trace gamenew-trace-2">
+                                    <span class="gamenew-trace-option">
+                                        <a href="#" data-id="56" title="5线以下"><span class="gm-name">5线以下</span></a>
+                                <a href="#" data-id="16" title="8线"><span class="gm-name">8线</span></a>
+                                <a href="#" data-id="17" title="9线"><span class="gm-name">9线</span></a>
+                                <a href="#" data-id="18" title="20线"><span class="gm-name">20线</span></a>
+                                <a href="#" data-id="19" title="25线"><span class="gm-name">25线</span></a>
+                                <a href="#" data-id="57" title="40线"><span class="gm-name">40线</span></a>
+                                <a href="#" data-id="37" title="其他线"><span class="gm-name">其他线</span></a>
+                                <a href="#" data-id="13" title="经典老虎机"><span class="gm-name">经典老虎机</span></a>
+                                </span>
+                                <span class="gamenew-trace-current"></span> <span class="gamenew-trace-num">(<b class="gamenew-trace-num-2"></b>)</span>
+                                </span>
+                                </span>
+                                </span>
+                            </div>
+                            <div class="elenew-live-view">
+                                <span><a href="#" class="elenew-viewbtn-block view-active" data-view="block"><i class="fa fa-th"></i></a></span>
+                                <span><a href="#" class="elenew-viewbtn-list" data-view="list"><i class="fa fa-list"></i></a></span>
+                                <span><a href="#" class="elenew-viewbtn-mini" data-view="mini"><i class="fa fa-align-justify"></i></a></span>
+                                <i></i>
+                            </div>
+                            <div id="elenew-search-wrap">
+                                <div class="elenew-search-btn" tabindex="6"><i class="fa fa-search"></i></div>
+                                <div class="elenew-search-input" title="请输入游戏名称">
+                                    <input name="elenew-search-game" id="elenew-search-game" placeholder="请输入游戏名称" value="" tabindex="5" type="search">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--menu end-->
+                    <!--casino game start-->
+                    <div id="elenew-game-wrap">
+                        <div id="elenew-game-space" class="elenew-game-wrap clearfix elenew-view-block gamenew-hall-5 elenew-layout-subjp" style="height: 780px; position: relative;">
+                                                        <div class="elenew-game-layout" id="game_30101" data-name="捕鱼传奇" data-id="30101" style="left: 0px; top: 0px; position: absolute;">
+                                <div class="elenew-img-wrap">
+                                    <div class="elenew-img-innerwrap">
+                                        <a class="elenew-game-img" href="#" data-gametype="game_30101">
+                                            <img data-img="image/game/casino/Game_30101.png" src="image/game/casino/Game_30101.png">
+                                        </a>
+                                        <div class="elenew-innerwrap">
+                                            <h3>
+                                                <div class="img-innerwrap-name">
+                                                    <span class="elenew-hall-icon elenew-hall-bbin"></span>捕鱼传奇                                                </div>
+                                                <a href="#" title="加入我的最爱" class="elenew-game-tool tool-btn-favorite id_30101 favorite-icon-N">
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                </a>
+                                            </h3>
+                                            <span class="elenew-game-content">「捕魚傳奇」多人聯網遊戲有絕佳的互動性，帶您徜徉美妙的海底奇景，飽覽絢麗熱帶魚群風光。一起感受豐富漁獲帶來高分獎勵的刺激快感吧！</span>
+                                                                                    </div>
+                                        <div class="elenew-game-status status-Recommend"></div>
+                                    </div>
+                                    <div class="elenew-game-ctl-wrap">
+                                        <div class="elenew-game-ctl-links removeNodes"><div class="elenew-block-title" title="捕鱼传奇"></div><a href="#" class="elenew-game-link ctl-btn-enter" title="进入游戏"><span>进入游戏</span></a><div class="elenew-block-btn">
+                                                <a href="#" class="elenew-game-link ctl-btn-rule">规则说明</a>
+                                            </div></div>
+                                    </div>
+                                </div>
+                                <div class="elenew-game-name clearfix">
+                                    <span class="elenew-hall-icon elenew-hall-bbin"></span>
+                                    <h3 title="捕鱼传奇">
+                                        捕鱼传奇<span class="mini-status
+                                        mini-status-Recommend"></span>
+                                    </h3>
+                                </div>
+                                <div class="elenew-game-ctl-tools">
+                                    <a href="#" title="加入我的最爱" class="elenew-game-tool tool-btn-favorite id_30101 favorite-icon-N"><i class="fa fa-star fa-lg"></i></a>
+                                </div>
+                            </div>
+                                                        <div class="elenew-game-layout" id="game_5068" data-name="酷搜馬戲團" data-id="5068" style="left: 250px; top: 0px; position: absolute;">
+                                <div class="elenew-img-wrap">
+                                    <div class="elenew-img-innerwrap">
+                                        <a class="elenew-game-img" href="#" data-gametype="game_5068">
+                                            <img data-img="image/game/casino/Game_5068.png" src="image/game/casino/Game_5068.png">
+                                        </a>
+                                        <div class="elenew-innerwrap">
+                                            <h3>
+                                                <div class="img-innerwrap-name">
+                                                    <span class="elenew-hall-icon elenew-hall-bbin"></span>酷搜馬戲團                                                </div>
+                                                <a href="#" title="加入我的最爱" class="elenew-game-tool tool-btn-favorite id_5068 favorite-icon-N favorite-icon-Y">
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                </a>
+                                            </h3>
+                                            <span class="elenew-game-content">KUSO CIRCUS馬戲團綜合三位小丑及四種動物轉盤，趣味盎然，親和力十足，而且獎金賠率頗高，是一款老少咸宜的遊戲。</span>
+                                                                                        <div class="elenew-game-sub-jp">
+                                                <div class="minorJP JP" id="game_5106_minorJP" data-jpcode="1,141.50">
+                                                    1,141.50                                                </div>
+                                            </div>
+                                                                                    </div>
+                                        <div class="elenew-game-status status-New"></div>
+                                    </div>
+                                    <div class="elenew-game-ctl-wrap">
+                                        <div class="elenew-game-ctl-links removeNodes"><div class="elenew-block-title" title="酷搜馬戲團"></div><a href="#" class="elenew-game-link ctl-btn-lite" title="进入游戏"><span>进入游戏</span></a><div class="elenew-block-btn">
+                                                <a href="#" class="elenew-game-link ctl-btn-flash">进入游戏</a>
+                                                <a href="#" class="elenew-game-link ctl-btn-rule">规则说明</a>
+                                            </div></div>
+                                    </div>
+                                </div>
+                                <div class="elenew-game-name clearfix">
+                                    <span class="elenew-hall-icon elenew-hall-bbin"></span>
+                                    <h3 title="酷搜馬戲團">
+                                        酷搜馬戲團<span class="mini-status
+                                        mini-status-New"></span>
+                                    </h3>
+                                </div>
+                                <div class="elenew-game-ctl-tools">
+                                    <a href="#" title="加入我的最爱" class="elenew-game-tool tool-btn-favorite id_5068 favorite-icon-N favorite-icon-Y"><i class="fa fa-star fa-lg"></i></a>
+                                </div>
+                            </div>
+                                                        <div class="elenew-game-layout" id="game_5095" data-name="鬥雞" data-id="5095" style="left: 500px; top: 0px; position: absolute;">
+                                <div class="elenew-img-wrap">
+                                    <div class="elenew-img-innerwrap">
+                                        <a class="elenew-game-img" href="#" data-gametype="game_5095">
+                                            <img data-img="image/game/casino/Game_5095.png" src="image/game/casino/Game_5095.png">
+                                        </a>
+                                        <div class="elenew-innerwrap">
+                                            <h3>
+                                                <div class="img-innerwrap-name">
+                                                    <span class="elenew-hall-icon elenew-hall-bbin"></span>鬥雞                                                </div>
+                                                <a href="#" title="加入我的最爱" class="elenew-game-tool tool-btn-favorite id_5095 favorite-icon-N">
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                </a>
+                                            </h3>
+                                            <span class="elenew-game-content">左右連線玩法全新升級! 看誰才是鬥雞之王!</span>
+                                                                                        <div class="elenew-game-sub-jp">
+                                                <div class="minorJP JP" id="game_5106_minorJP" data-jpcode="922.04">
+                                                    922.04                                                </div>
+                                            </div>
+                                                                                    </div>
+                                        <div class="elenew-game-status status-New"></div>
+                                    </div>
+                                    <div class="elenew-game-ctl-wrap">
+                                        <div class="elenew-game-ctl-links removeNodes"><div class="elenew-block-title" title="鬥雞"></div><a href="#" class="elenew-game-link ctl-btn-lite" title="进入游戏"><span>进入游戏</span></a><div class="elenew-block-btn">
+                                                <a href="#" class="elenew-game-link ctl-btn-flash">进入游戏</a>
+                                                <a href="#" class="elenew-game-link ctl-btn-rule">规则说明</a>
+                                            </div></div>
+                                    </div>
+                                </div>
+                                <div class="elenew-game-name clearfix">
+                                    <span class="elenew-hall-icon elenew-hall-bbin"></span>
+                                    <h3 title="鬥雞">
+                                        鬥雞<span class="mini-status
+                                        mini-status-New"></span>
+                                    </h3>
+                                </div>
+                                <div class="elenew-game-ctl-tools">
+                                    <a href="#" title="加入我的最爱" class="elenew-game-tool tool-btn-favorite id_5095 favorite-icon-N"><i class="fa fa-star fa-lg"></i></a>
+                                </div>
+                            </div>
+                                                        <div class="elenew-game-layout" id="game_5904" data-name="蒸氣炸彈" data-id="5904" style="left: 750px; top: 0px; position: absolute;">
+                                <div class="elenew-img-wrap">
+                                    <div class="elenew-img-innerwrap">
+                                        <a class="elenew-game-img" href="#" data-gametype="game_5904">
+                                            <img data-img="image/game/casino/Game_5904.png" src="image/game/casino/Game_5904.png">
+                                        </a>
+                                        <div class="elenew-innerwrap">
+                                            <h3>
+                                                <div class="img-innerwrap-name">
+                                                    <span class="elenew-hall-icon elenew-hall-bbin"></span>蒸氣炸彈                                                </div>
+                                                <a href="#" title="加入我的最爱" class="elenew-game-tool tool-btn-favorite id_5904 favorite-icon-N favorite-icon-Y">
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                </a>
+                                            </h3>
+                                            <span class="elenew-game-content">蒸氣炸彈(POP BOMBER)是一款輕鬆活潑的消除遊戲、配合各式各樣道具，可以獲得更多分數。</span>
+                                                                                        <div class="elenew-game-sub-jp">
+                                                <div class="minorJP JP" id="game_5106_minorJP" data-jpcode="705.32">
+                                                    705.32                                                </div>
+                                            </div>
+                                                                                    </div>
+                                        <div class="elenew-game-status status-NewBonus"></div>
+                                    </div>
+                                    <div class="elenew-game-ctl-wrap">
+                                        <div class="elenew-game-ctl-links removeNodes"><div class="elenew-block-title" title="蒸氣炸彈"></div><a href="#" class="elenew-game-link ctl-btn-lite" title="进入游戏"><span>进入游戏</span></a><div class="elenew-block-btn">
+                                                <a href="#" class="elenew-game-link ctl-btn-flash">进入游戏</a>
+                                                <a href="#" class="elenew-game-link ctl-btn-rule">规则说明</a>
+                                            </div></div>
+                                    </div>
+                                </div>
+                                <div class="elenew-game-name clearfix">
+                                    <span class="elenew-hall-icon elenew-hall-bbin"></span>
+                                    <h3 title="蒸氣炸彈">
+                                        蒸氣炸彈<span class="mini-status
+                                        mini-status-NewBonus"></span>
+                                    </h3>
+                                </div>
+                                <div class="elenew-game-ctl-tools">
+                                    <a href="#" title="加入我的最爱" class="elenew-game-tool tool-btn-favorite id_5904 favorite-icon-N favorite-icon-Y"><i class="fa fa-star fa-lg"></i></a>
+                                </div>
+                            </div>
+                                                        <div class="elenew-game-layout" id="game_5905" data-name="麻將連環寶" data-id="5905" style="left: 0px; top: 260px; position: absolute;">
+                                <div class="elenew-img-wrap">
+                                    <div class="elenew-img-innerwrap">
+                                        <a class="elenew-game-img" href="#" data-gametype="game_5905">
+                                            <img data-img="image/game/casino/Game_5905.png" src="image/game/casino/Game_5905.png">
+                                        </a>
+                                        <div class="elenew-innerwrap">
+                                            <h3>
+                                                <div class="img-innerwrap-name">
+                                                    <span class="elenew-hall-icon elenew-hall-bbin"></span>麻將連環寶                                                </div>
+                                                <a href="#" title="加入我的最爱" class="elenew-game-tool tool-btn-favorite id_5905 favorite-icon-N">
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                </a>
+                                            </h3>
+                                            <span class="elenew-game-content">「麻將連環寶」是一款結合傳統賓果遊戲與中國麻將牌的新型態賓果遊戲。以熟悉的玩法加上獨特的「冬帝」與「菊皇」過關模式，搭配上豐厚獎金分數的彩金遊戲以及特殊的聽牌吃胡功能，讓會員能同時進行賓果與麻將遊戲，更能獲得高額獎金分數。</span>
+                                                                                    </div>
+                                        <div class="elenew-game-status "></div>
+                                    </div>
+                                    <div class="elenew-game-ctl-wrap">
+                                        <div class="elenew-game-ctl-links removeNodes"><div class="elenew-block-title" title="麻將連環寶"></div><a href="#" class="elenew-game-link ctl-btn-lite" title="进入游戏"><span>进入游戏</span></a><div class="elenew-block-btn">
+                                                <a href="#" class="elenew-game-link ctl-btn-flash">进入游戏</a>
+                                                <a href="#" class="elenew-game-link ctl-btn-rule">规则说明</a>
+                                            </div></div>
+                                    </div>
+                                </div>
+                                <div class="elenew-game-name clearfix">
+                                    <span class="elenew-hall-icon elenew-hall-bbin"></span>
+                                    <h3 title="麻將連環寶">
+                                        麻將連環寶<span class="mini-status
+                                        "></span>
+                                    </h3>
+                                </div>
+                                <div class="elenew-game-ctl-tools">
+                                    <a href="#" title="加入我的最爱" class="elenew-game-tool tool-btn-favorite id_5905 favorite-icon-N"><i class="fa fa-star fa-lg"></i></a>
+                                </div>
+                            </div>
+                                                        <div class="elenew-game-layout" id="game_5902" data-name="糖果派對" data-id="5902" style="left: 250px; top: 260px; position: absolute;">
+                                <div class="elenew-img-wrap">
+                                    <div class="elenew-img-innerwrap">
+                                        <a class="elenew-game-img" href="#" data-gametype="game_5902">
+                                            <img data-img="image/game/casino/Game_5902.png" src="image/game/casino/Game_5902.png">
+                                        </a>
+                                        <div class="elenew-innerwrap">
+                                            <h3>
+                                                <div class="img-innerwrap-name">
+                                                    <span class="elenew-hall-icon elenew-hall-bbin"></span>糖果派對                                                </div>
+                                                <a href="#" title="加入我的最爱" class="elenew-game-tool tool-btn-favorite id_5902 favorite-icon-N">
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                </a>
+                                            </h3>
+                                            <span class="elenew-game-content">簡單快速的遊戲步調，只要點一下，立馬享受串聯迅速獲獎的快感；遊戲總共分為 3 層，每層獎金大不同！</span>
+                                                                                        <div class="elenew-game-sub-jp">
+                                                <div class="minorJP JP" id="game_5106_minorJP" data-jpcode="4,517.72">
+                                                    4,517.72                                                </div>
+                                            </div>
+                                                                                    </div>
+                                        <div class="elenew-game-status "></div>
+                                    </div>
+                                    <div class="elenew-game-ctl-wrap">
+                                        <div class="elenew-game-ctl-links removeNodes"><div class="elenew-block-title" title="糖果派對"></div><a href="#" class="elenew-game-link ctl-btn-enter" title="进入游戏"><span>进入游戏</span></a><div class="elenew-block-btn">
+                                                <a href="#" class="elenew-game-link ctl-btn-rule">规则说明</a>
+                                            </div></div>
+                                    </div>
+                                </div>
+                                <div class="elenew-game-name clearfix">
+                                    <span class="elenew-hall-icon elenew-hall-bbin"></span>
+                                    <h3 title="糖果派對">
+                                        糖果派對<span class="mini-status
+                                        "></span>
+                                    </h3>
+                                </div>
+                                <div class="elenew-game-ctl-tools">
+                                    <a href="#" title="加入我的最爱" class="elenew-game-tool tool-btn-favorite id_5902 favorite-icon-N"><i class="fa fa-star fa-lg"></i></a>
+                                </div>
+                            </div>
+                                                        <div class="elenew-game-layout" id="game_5901" data-name="連環奪寶" data-id="5901" style="left: 500px; top: 260px; position: absolute;">
+                                <div class="elenew-img-wrap">
+                                    <div class="elenew-img-innerwrap">
+                                        <a class="elenew-game-img" href="#" data-gametype="game_5901">
+                                            <img data-img="image/game/casino/Game_5901.png" src="image/game/casino/Game_5901.png">
+                                        </a>
+                                        <div class="elenew-innerwrap">
+                                            <h3>
+                                                <div class="img-innerwrap-name">
+                                                    <span class="elenew-hall-icon elenew-hall-bbin"></span>連環奪寶                                                </div>
+                                                <a href="#" title="加入我的最爱" class="elenew-game-tool tool-btn-favorite id_5901 favorite-icon-N favorite-icon-Y">
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                </a>
+                                            </h3>
+                                            <span class="elenew-game-content">寶石迅速地掉落，獎金快速地獲得！3關獎金大不同，搭配特殊的獎金遊戲，輕鬆快速獲得高額獎金！</span>
+                                                                                        <div class="elenew-game-sub-jp">
+                                                <div class="minorJP JP" id="game_5106_minorJP" data-jpcode="3,335.01">
+                                                    3,335.01                                                </div>
+                                            </div>
+                                                                                    </div>
+                                        <div class="elenew-game-status "></div>
+                                    </div>
+                                    <div class="elenew-game-ctl-wrap">
+                                        <div class="elenew-game-ctl-links removeNodes"><div class="elenew-block-title" title="連環奪寶"></div><a href="#" class="elenew-game-link ctl-btn-enter" title="进入游戏"><span>进入游戏</span></a><div class="elenew-block-btn">
+                                                <a href="#" class="elenew-game-link ctl-btn-rule">规则说明</a>
+                                            </div></div>
+                                    </div>
+                                </div>
+                                <div class="elenew-game-name clearfix">
+                                    <span class="elenew-hall-icon elenew-hall-bbin"></span>
+                                    <h3 title="連環奪寶">
+                                        連環奪寶<span class="mini-status
+                                        "></span>
+                                    </h3>
+                                </div>
+                                <div class="elenew-game-ctl-tools">
+                                    <a href="#" title="加入我的最爱" class="elenew-game-tool tool-btn-favorite id_5901 favorite-icon-N favorite-icon-Y"><i class="fa fa-star fa-lg"></i></a>
+                                </div>
+                            </div>
+                                                        <div class="elenew-game-layout" id="game_5837" data-name="喜福猴年" data-id="5837" style="left: 750px; top: 260px; position: absolute;">
+                                <div class="elenew-img-wrap">
+                                    <div class="elenew-img-innerwrap">
+                                        <a class="elenew-game-img" href="#" data-gametype="game_5837">
+                                            <img data-img="image/game/casino/Game_5837.png" src="image/game/casino/Game_5837.png">
+                                        </a>
+                                        <div class="elenew-innerwrap">
+                                            <h3>
+                                                <div class="img-innerwrap-name">
+                                                    <span class="elenew-hall-icon elenew-hall-bbin"></span>喜福猴年                                                </div>
+                                                <a href="#" title="加入我的最爱" class="elenew-game-tool tool-btn-favorite id_5837 favorite-icon-N">
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                </a>
+                                            </h3>
+                                            <span class="elenew-game-content">「喜福猴年」是以中國十二生肖猴為主題的喜慶拉霸遊戲，絢麗燈光效果與多重喜慶元素搭配50條連線與高額賠率，讓會員能天天年年歡喜發大財。</span>
+                                                                                        <div class="elenew-game-sub-jp">
+                                                <div class="minorJP JP" id="game_5106_minorJP" data-jpcode="2,355.09">
+                                                    2,355.09                                                </div>
+                                            </div>
+                                                                                    </div>
+                                        <div class="elenew-game-status "></div>
+                                    </div>
+                                    <div class="elenew-game-ctl-wrap">
+                                        <div class="elenew-game-ctl-links removeNodes"><div class="elenew-block-title" title="喜福猴年"></div><a href="#" class="elenew-game-link ctl-btn-enter" title="进入游戏"><span>进入游戏</span></a><div class="elenew-block-btn">
+                                                <a href="#" class="elenew-game-link ctl-btn-rule">规则说明</a>
+                                            </div></div>
+                                    </div>
+                                </div>
+                                <div class="elenew-game-name clearfix">
+                                    <span class="elenew-hall-icon elenew-hall-bbin"></span>
+                                    <h3 title="喜福猴年">
+                                        喜福猴年<span class="mini-status
+                                        "></span>
+                                    </h3>
+                                </div>
+                                <div class="elenew-game-ctl-tools">
+                                    <a href="#" title="加入我的最爱" class="elenew-game-tool tool-btn-favorite id_5837 favorite-icon-N"><i class="fa fa-star fa-lg"></i></a>
+                                </div>
+                            </div>
+                                                        <div class="elenew-game-layout" id="game_5404" data-name="沙灘排球" data-id="5404" style="left: 0px; top: 520px; position: absolute;">
+                                <div class="elenew-img-wrap">
+                                    <div class="elenew-img-innerwrap">
+                                        <a class="elenew-game-img" href="#" data-gametype="game_5404">
+                                            <img data-img="image/game/casino/Game_5404.png" src="image/game/casino/Game_5404.png">
+                                        </a>
+                                        <div class="elenew-innerwrap">
+                                            <h3>
+                                                <div class="img-innerwrap-name">
+                                                    <span class="elenew-hall-icon elenew-hall-bbin"></span>沙灘排球                                                </div>
+                                                <a href="#" title="加入我的最爱" class="elenew-game-tool tool-btn-favorite id_5404 favorite-icon-N">
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                </a>
+                                            </h3>
+                                            <span class="elenew-game-content">「沙灘排球」藉由兩位美少女角色：康尼與雪倫之間的對戰練習及益智遊戲，展現沙灘排球的特色及陽光下的青春動感。</span>
+                                                                                        <div class="elenew-game-sub-jp">
+                                                <div class="minorJP JP" id="game_5106_minorJP" data-jpcode="2,658.87">
+                                                    2,658.87                                                </div>
+                                            </div>
+                                                                                    </div>
+                                        <div class="elenew-game-status "></div>
+                                    </div>
+                                    <div class="elenew-game-ctl-wrap">
+                                        <div class="elenew-game-ctl-links removeNodes"><div class="elenew-block-title" title="沙灘排球"></div><a href="#" class="elenew-game-link ctl-btn-enter" title="进入游戏"><span>进入游戏</span></a><div class="elenew-block-btn">
+                                                <a href="#" class="elenew-game-link ctl-btn-rule">规则说明</a>
+                                            </div></div>
+                                    </div>
+                                </div>
+                                <div class="elenew-game-name clearfix">
+                                    <span class="elenew-hall-icon elenew-hall-bbin"></span>
+                                    <h3 title="沙灘排球">
+                                        沙灘排球<span class="mini-status
+                                        "></span>
+                                    </h3>
+                                </div>
+                                <div class="elenew-game-ctl-tools">
+                                    <a href="#" title="加入我的最爱" class="elenew-game-tool tool-btn-favorite id_5404 favorite-icon-N"><i class="fa fa-star fa-lg"></i></a>
+                                </div>
+                            </div>
+                                                        <div class="elenew-game-layout" id="game_5106" data-name="三國" data-id="5106" style="left: 250px; top: 520px; position: absolute;">
+                                <div class="elenew-img-wrap">
+                                    <div class="elenew-img-innerwrap">
+                                        <a class="elenew-game-img" href="#" data-gametype="game_5106">
+                                            <img data-img="image/game/casino/Game_5106.png" src="image/game/casino/Game_5106.png">
+                                        </a>
+                                        <div class="elenew-innerwrap">
+                                            <h3>
+                                                <div class="img-innerwrap-name">
+                                                    <span class="elenew-hall-icon elenew-hall-bbin"></span>三國                                                </div>
+                                                <a href="#" title="加入我的最爱" class="elenew-game-tool tool-btn-favorite id_5106 favorite-icon-N">
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                </a>
+                                            </h3>
+                                            <span class="elenew-game-content">「三國」是以華人最喜愛的三國歷史故事為主題，藉由桃園三結義「劉備、關羽、張飛」與戰神「呂布」的城池攻守，以及探尋珍貴的三國祕寶，讓會員享受史詩戰爭臨場感及大量財富。</span>
+                                                                                        <div class="elenew-game-sub-jp">
+                                                <div class="minorJP JP" id="game_5106_minorJP" data-jpcode="4,273.16">
+                                                    4,273.16                                                </div>
+                                            </div>
+                                                                                    </div>
+                                        <div class="elenew-game-status "></div>
+                                    </div>
+                                    <div class="elenew-game-ctl-wrap">
+                                        <div class="elenew-game-ctl-links removeNodes"><div class="elenew-block-title" title="三國"></div><a href="#" class="elenew-game-link ctl-btn-enter" title="进入游戏"><span>进入游戏</span></a><div class="elenew-block-btn">
+                                                <a href="#" class="elenew-game-link ctl-btn-rule">规则说明</a>
+                                            </div></div>
+                                    </div>
+                                </div>
+                                <div class="elenew-game-name clearfix">
+                                    <span class="elenew-hall-icon elenew-hall-bbin"></span>
+                                    <h3 title="三國">
+                                        三國<span class="mini-status
+                                        "></span>
+                                    </h3>
+                                </div>
+                                <div class="elenew-game-ctl-tools">
+                                    <a href="#" title="加入我的最爱" class="elenew-game-tool tool-btn-favorite id_5106 favorite-icon-N"><i class="fa fa-star fa-lg"></i></a>
+                                </div>
+                            </div>
+                                                        <div class="elenew-game-layout" id="game_5043" data-name="鑽石水果盤" data-id="5043" style="left: 500px; top: 520px; position: absolute;">
+                                <div class="elenew-img-wrap">
+                                    <div class="elenew-img-innerwrap">
+                                        <a class="elenew-game-img" href="#" data-gametype="game_5043">
+                                            <img data-img="image/game/casino/Game_5043.png" src="image/game/casino/Game_5043.png">
+                                        </a>
+                                        <div class="elenew-innerwrap">
+                                            <h3>
+                                                <div class="img-innerwrap-name">
+                                                    <span class="elenew-hall-icon elenew-hall-bbin"></span>鑽石水果盤                                                </div>
+                                                <a href="#" title="加入我的最爱" class="elenew-game-tool tool-btn-favorite id_5043 favorite-icon-N">
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                </a>
+                                            </h3>
+                                            <span class="elenew-game-content">鑽石水果盤為簡單又容易上手的水果盤，連線方式分為單一連線、ALL全盤、ANY 777、ANY 7、ANY 777&amp;7、第1線連線。 並搭配POOL與EX.BONUS分數，使玩家獲得更的多分數。</span>
+                                                                                        <div class="elenew-game-sub-jp">
+                                                <div class="minorJP JP" id="game_5106_minorJP" data-jpcode="3,586.75">
+                                                    3,586.75                                                </div>
+                                            </div>
+                                                                                    </div>
+                                        <div class="elenew-game-status "></div>
+                                    </div>
+                                    <div class="elenew-game-ctl-wrap">
+                                        <div class="elenew-game-ctl-links removeNodes"><div class="elenew-block-title" title="鑽石水果盤"></div><a href="#" class="elenew-game-link ctl-btn-enter" title="进入游戏"><span>进入游戏</span></a><div class="elenew-block-btn">
+                                                <a href="#" class="elenew-game-link ctl-btn-rule">规则说明</a>
+                                            </div></div>
+                                    </div>
+                                </div>
+                                <div class="elenew-game-name clearfix">
+                                    <span class="elenew-hall-icon elenew-hall-bbin"></span>
+                                    <h3 title="鑽石水果盤">
+                                        鑽石水果盤<span class="mini-status
+                                        "></span>
+                                    </h3>
+                                </div>
+                                <div class="elenew-game-ctl-tools">
+                                    <a href="#" title="加入我的最爱" class="elenew-game-tool tool-btn-favorite id_5043 favorite-icon-N"><i class="fa fa-star fa-lg"></i></a>
+                                </div>
+                            </div>
+                                                        <div class="elenew-game-layout" id="game_5058" data-name="瘋狂水果盤" data-id="5058" style="left: 750px; top: 520px; position: absolute;">
+                                <div class="elenew-img-wrap">
+                                    <div class="elenew-img-innerwrap">
+                                        <a class="elenew-game-img" href="#" data-gametype="game_5058">
+                                            <img data-img="image/game/casino/Game_5058.png" src="image/game/casino/Game_5058.png">
+                                        </a>
+                                        <div class="elenew-innerwrap">
+                                            <h3>
+                                                <div class="img-innerwrap-name">
+                                                    <span class="elenew-hall-icon elenew-hall-bbin"></span>瘋狂水果盤                                                </div>
+                                                <a href="#" title="加入我的最爱" class="elenew-game-tool tool-btn-favorite id_5058 favorite-icon-N favorite-icon-Y">
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                </a>
+                                            </h3>
+                                            <span class="elenew-game-content">瘋狂水果盤為簡單又容易上手的水果盤，連線方式分為單一連線、ALL全盤、ANY 777、ANY 7、ANY 777&amp;7、第1線連線。 並搭配POOL與EX.BONUS分數，使玩家獲得更的多分數。</span>
+                                                                                        <div class="elenew-game-sub-jp">
+                                                <div class="minorJP JP" id="game_5106_minorJP" data-jpcode="3,698.16">
+                                                    3,698.16                                                </div>
+                                            </div>
+                                                                                    </div>
+                                        <div class="elenew-game-status "></div>
+                                    </div>
+                                    <div class="elenew-game-ctl-wrap">
+                                        <div class="elenew-game-ctl-links removeNodes"><div class="elenew-block-title" title="瘋狂水果盤"></div><a href="#" class="elenew-game-link ctl-btn-lite" title="进入游戏"><span>进入游戏</span></a><div class="elenew-block-btn">
+                                                <a href="#" class="elenew-game-link ctl-btn-flash">进入游戏</a>
+                                                <a href="#" class="elenew-game-link ctl-btn-rule">规则说明</a>
+                                            </div></div>
+                                    </div>
+                                </div>
+                                <div class="elenew-game-name clearfix">
+                                    <span class="elenew-hall-icon elenew-hall-bbin"></span>
+                                    <h3 title="瘋狂水果盤">
+                                        瘋狂水果盤<span class="mini-status
+                                        "></span>
+                                    </h3>
+                                </div>
+                                <div class="elenew-game-ctl-tools">
+                                    <a href="#" title="加入我的最爱" class="elenew-game-tool tool-btn-favorite id_5058 favorite-icon-N favorite-icon-Y"><i class="fa fa-star fa-lg"></i></a>
+                                </div>
+                            </div>
+                                                    </div>
+                    </div>
+                    <!--casino game end-->
+                </div>
+                <!--main content end-->
+            </div>
+        </div>
+        <script src="js/game/jquery.js"></script>
+        <script src="js/game/jquery.cookie.js"></script>
+        <script src="js/game/flipCounter.js"></script>
+        <script src="js/game/main.js"></script>
+        <script src="js/game/newCasino.js"></script>
+    </body>
+
+    </html>
+
+				</div>
+			<!-- end casino -->
+			</div>
+			<!-- end page-body -->
+		</div>
+		<!-- end page-container -->
+
+    <!-- begin page-footer -->
+	  <div id="page-footer">
+  <div class="wrapper">
+    <div class="footer-infor clearfix">
+      <ul>
+        <li>
+          <div class="footer-infor-title">MOBILE BET</div>
+          <div class="footer-infor-content"><a href="#"><img src="image/lang/zh-cn/footer_mobile.png"></a></div>
+        </li>
+        <li>
+          <div class="footer-infor-title">PAYMENT METHODS</div>
+          <div class="footer-infor-content"><img src="image/footer_img.png"></div>
+        </li>
+        <li>
+          <div class="footer-infor-title">ONLINE SERVICE</div>
+          <div class="footer-infor-content"><a href="#"><img src="image/footer_service.png"></a></div>
+        </li>
+      </ul>;
+
+    </div>
+    <div class="footer-logo">
+      <a href="#"><img src="image/bbinlogo.png"></a>
+      <a href="#"><img src="image/ublogo.png"></a>
+    </div>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="about.html">关于我们</a></li>
+        <li><a href="#">联系我们</a></li>
+        <li><a href="#">合作伙伴</a></li>
+        <li><a href="#">存款帮助</a></li>
+        <li><a href="#">取款帮助</a></li>
+        <li><a href="#">常见问题</a></li>
+        <li><a href="#">责任博彩</a></li>
+      </ul>
+    </div>
+    <div class="footer-copyright">COPYRIGHT &copy; 澳门金沙VIP GALAXY RESERVED</div>
+  </div>
+</div>
+
+		<!-- end page-footer -->
+		</div>
+		<!--end mainBody -->
+
+<!-- Share core Javascript -->
+<script src="js/common.js"></script>
+<script src="js/subTab.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/app.js"></script>
+<!-- Javascript for this template -->
+
+<script>
+	$(".langTitle").click(function(){
+		$(this).toggleClass('lang-turn');
+	});
+</script>
+</body>
+</html>

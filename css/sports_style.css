@@ -1,0 +1,163 @@
+@charset "UTF-8";
+/*---------------------------- 基本變數 end ------------------------------------------*/
+/*---------------------------- 背景設定 ----------------------------------------------*/
+/*---------------------------- 背景設定 end ------------------------------------------*/
+/*---------------------------- 文字屬性 ----------------------------------------------*/
+/*---------------------------- 文字屬性 end ------------------------------------------*/
+/*---------------------------- BOX 區塊屬性 ------------------------------------------*/
+/*---------------------------- BOX 區塊屬性 end --------------------------------------*/
+/*---------------------------- 各類選單屬性 -------------------------------------------*/
+/*---------------------------- 各類選單屬性 end ---------------------------------------*/
+.sport-wrap { max-width: 960px; margin: 0 auto; }
+
+.sport-top { position: relative; height: 250px; background: url("../image/sportLobby/sport_top_bg.jpg") top center no-repeat; }
+
+.sport-top-wrap { position: absolute; top: 0; right: 0; z-index: 1; width: 439px; height: 250px; background: url("../image/sportLobby/sport_top_wrap_bg.png") center right no-repeat; }
+.sport-top-wrap h2 { position: absolute; top: 100px; right: 24px; z-index: 1; display: block; line-height: 1; font-size: 22px; font-weight: normal; color: #FFFF73; }
+.sport-top-wrap .title { position: absolute; top: 48px; right: 48px; z-index: 1; display: block; max-width: 100%; }
+.sport-top-wrap .play-btn { position: absolute; right: 32px; bottom: 32px; z-index: 2; display: block; width: 264px; line-height: 48px; text-align: center; font-family: 'Arial', '微軟正黑體'; font-size: 18px; color: #009AE2; border: 2px solid #009AE2; border-radius: 26px; }
+.sport-top-wrap .play-btn:after { content: ""; position: absolute; top: 9px; right: 9px; width: 30px; height: 30px; background: url("../image/sportLobby/sport_arrow_icon.png") no-repeat; background-position: 0 0; }
+.sport-top-wrap .play-btn:hover { color: #fff; background: #009AE2; }
+.sport-top-wrap .play-btn:hover::after { background-position: 0 -30px; }
+@media only screen and (max-width: 640px) { .sport-top-wrap { position: relative; width: 100%; background-color: #2a2a2a; }
+  .sport-top-wrap h2 { right: 15%; }
+  .sport-top-wrap .title { position: relative; right: auto; margin: 0 auto; }
+  .sport-top-wrap .play-btn { right: auto; left: 50%; margin-left: -132px; } }
+
+.sport-top-menu { position: relative; z-index: 2; width: 368px; height: 250px; overflow: hidden; }
+.sport-top-menu ul { padding-top: 26px; }
+.sport-top-menu li { display: block; width: 174px; height: 104px; background-repeat: no-repeat; background-position: 0 0; margin: 0 0 4px 10px; float: left; }
+.sport-top-menu li:hover { background-position: 0 -104px; }
+.sport-top-menu li.ts { background-image: url("../image/sportLobby/sport_top_menu_ts_m.png"); }
+.sport-top-menu li.tb { background-image: url("../image/sportLobby/sport_top_menu_tb_m.png"); }
+.sport-top-menu li.parlay { background-image: url("../image/sportLobby/sport_top_menu_parlay_m.png"); }
+.sport-top-menu li.champion { background-image: url("../image/sportLobby/sport_top_menu_champion_m.png"); }
+.sport-top-menu li a { position: relative; display: block; width: 100%; height: 100%; }
+.sport-top-menu li a span { position: absolute; left: 0; bottom: 2px; display: block; width: 100%; text-align: center; font-family: 'Arial', '微軟正黑體'; font-size: 16px; color: #fff; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sport-top-menu li a:hover span { color: #009CDF; }
+
+.sport-top-wagers { position: absolute; top: 28px; right: 16px; z-index: 5; width: 50%; max-width: 380px; height: auto; background: url("../image/sportLobby/bg_black2b2a2a_o85.png") repeat; border: 1px solid #444; }
+.sport-top-wagers .title { display: block; line-height: 40px; text-align: center; font-size: 22px; font-weight: bold; color: #777; border-bottom: 1px solid #444; }
+
+.sport-top-wagers-content { display: block; }
+.sport-top-wagers-content ul { display: block; width: 50%; float: left; padding: 16px 0 12px; margin-left: -1px; }
+.sport-top-wagers-content ul.first-child { border-right: 1px solid #444; }
+.sport-top-wagers-content li { display: block; }
+.sport-top-wagers-content li h2, .sport-top-wagers-content li h3 { display: block; line-height: 1; text-align: center; color: #fff; font-size: 22px; font-weight: bold; }
+.sport-top-wagers-content li h2 { margin: 0 0 12px; }
+.sport-top-wagers-content li h3 { margin: 0 0 22.4px; }
+.sport-top-wagers-content li h3 span { display: inline-block; vertical-align: bottom; }
+.sport-top-wagers-content li h3 span.num { font-family: 'Trebuchet MS'; font-size: 46px; font-weight: normal; color: #EE4958; }
+.sport-top-wagers-content li h3 span.unit { margin: 0 0 8px 10px; }
+.sport-top-wagers-content a { position: relative; display: block; width: 136px; line-height: 32px; font-size: 14px; color: #F34555; border: 1px solid #F34555; border-radius: 17px; margin: 0 auto; text-indent: 16px; }
+.sport-top-wagers-content a::after { content: ""; position: absolute; top: 50%; right: 5px; z-index: 1; display: block; width: 22px; height: 22px; background-image: url("../image/sportLobby/sport_wagers_arrow.png"); background-repeat: no-repeat; background-position: 0 0; margin: -12px 0 0; }
+.sport-top-wagers-content a:hover { color: #fff; background: #F34555; }
+.sport-top-wagers-content a:hover::after { background-position: 0 -22px; }
+@media only screen and (max-width: 640px) { .sport-top-wagers-content ul { padding-bottom: 16px; }
+  .sport-top-wagers-content li h2 { margin: 0; }
+  .sport-top-wagers-content li h3 { margin: 32px 0; } }
+
+.sport-est-time { position: absolute; top: 8px; left: 16px; z-index: 1; font-size: 12px; color: #fff; }
+
+.sport-game { position: relative; }
+
+.sport-game-comming, .sport-game-latest-resault, .sport-game-rolling { width: 50%; float: left; }
+
+.sport-game-comming, .sport-game-rolling { height: 318px; }
+.sport-game-comming .sport-game-live-title, .sport-game-rolling .sport-game-live-title { padding-right: 72px; }
+.sport-game-comming::before, .sport-game-rolling::before { content: ""; position: absolute; top: 0; left: 0; z-index: 0; display: block; width: 100%; height: 42px; background: #2a2a2a; }
+
+.sport-game-rolling { background: #E8E8E8; }
+
+.sport-game-comming { background: #F2F2F2; }
+
+.sport-game-latest-resault { background: #F2F2F2; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+
+.sport-game-wall { position: absolute; width: 100%; }
+
+.sport-game-inner { height: 274px; }
+.sport-game-inner ul { display: block; height: 100%; border: 1px solid #ddd; overflow: hidden; }
+.sport-game-inner li { position: relative; display: block; height: 91px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; padding: 0 16px 0 96px; }
+
+.sport-game-nogame { position: relative; display: block; height: 100%; background: #ddd; text-align: center; }
+.sport-game-nogame .title { position: relative; top: 50%; left: 0; display: inline-block; line-height: 42px; font-size: 30px; color: #999; background: url("../image/sportLobby/sport_nogame_icon.png") top left no-repeat; margin: -21px 0 0; padding: 0 0 0 48px; }
+
+.sport-game-box { position: absolute; top: 0; left: 0; width: 80px; height: 100%; line-height: 24px; text-align: center; font-size: 18px; color: #545454; border-right: 1px solid #ddd; padding: 24px 0; }
+.sport-game-box span { display: block; }
+
+.sport-game-content { width: 100%; padding: 6px 0 0; }
+
+.sport-game-live-sec { color: #F64E5E; }
+
+.sport-game-live-title { position: relative; line-height: 26px; }
+.sport-game-live-title h2, .sport-game-live-title h3 { display: block; font-weight: normal; color: #999; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sport-game-live-title h2 { font-size: 18px; }
+.sport-game-live-title h3 { font-size: 14px; }
+.sport-game-live-title a { position: absolute; top: 0; right: 0; display: block; width: 60px; line-height: 24px; text-align: center; font-size: 14px; color: #999; border: 1px solid #CECECE; }
+
+.sport-game-live-versus { margin: 4px 0 0; }
+
+.sport-game-live-team { position: relative; display: block; line-height: 20px; font-size: 14px; color: #545454; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sport-game-live-team i { line-height: 24px; font-style: normal; }
+.sport-game-live-team.maker { color: #F4760B; }
+
+.sport-game-live-name { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 0 120px 0 0; }
+
+.sport-game-live-handicap, .sport-game-live-odds { position: absolute; top: 0; width: 60px; text-align: center; }
+
+.sport-game-live-odds { right: 0; color: #545454 !important; }
+
+.sport-game-live-handicap { right: 60px; }
+
+.sport-game-title { height: 40px; line-height: 26px; color: #999; background: #2a2a2a; border: 1px solid #333; }
+.sport-game-title::before { padding-top: 7px; }
+.sport-game-title span { font-family: 'Arial', '微軟正黑體'; font-size: 18px; float: left; margin: 0 0 0 8px; }
+.sport-game-title span.live { color: #F15261; }
+
+.sport-game-icon { float: left; margin: 0 0 0 18px; overflow: hidden; width: 24px; height: 24px; background: url("../image/sportLobby/sport_game_icon_border.png"); }
+.sport-game-icon::after { content: ""; display: block; width: 100%; height: 100%; margin: 0 2px; background-image: url("../image/sportLobby/icon_sport.png"); background-repeat: no-repeat; }
+.sport-game-icon.FT::after { background-position: -5px center; }
+.sport-game-icon.BK::after { background-position: -35px center; }
+.sport-game-icon.BS::after { background-position: -65px center; }
+.sport-game-icon.TN::after { background-position: -95px center; }
+.sport-game-icon.IH::after { background-position: -125px center; }
+.sport-game-icon.FB::after { background-position: -155px center; }
+.sport-game-icon.SP::after { background-position: -185px center; }
+.sport-game-icon.F1::after { background-position: -215px center; }
+
+.sport-game-arrow { width: 24px; height: 24px; float: left; margin: 0 0 0 18px; overflow: hidden; }
+.sport-game-arrow::after { content: ""; display: block; width: 100%; height: 100%; background-image: url("../image/sportLobby/sport_title_arrow.png"); background-repeat: no-repeat; background-size: 100% auto; }
+
+.sport-game-ticker { height: 182px; overflow: hidden; }
+.sport-game-ticker li { display: block; height: 100%; }
+
+.sport-game-list { position: relative; display: block; height: 91px; border: 1px solid #ddd; padding: 0 16px 0 96px; }
+
+.sport-banner { position: relative; height: 224px; border: 1px solid #ccc; overflow: hidden; }
+
+.sport-slider { position: relative; width: 100%; }
+.sport-slider li { -webkit-backface-visibility: hidden; position: absolute; display: none; width: 100%; left: 0; top: 0; }
+.sport-slider img { display: block; width: 100%; }
+.sport-slider_tabs { position: absolute; right: 0; bottom: 4px; z-index: 99; width: 60%; text-align: right; padding: 0 32px 0 0; }
+.sport-slider_tabs li { display: inline-block; margin: 0 4px; float: none; }
+.sport-slider_tabs li a { display: block; width: 16px; height: 16px; text-indent: 9999px; background: url("../image/sportLobby/slider_ctrl.png"); overflow: hidden; }
+.sport-slider_tabs .sport-slider_here a { background-position: bottom; }
+
+#sportGameBox1, #sportGameBox2 { position: relative; }
+#sportGameBox1 .control, #sportGameBox2 .control { display: none; }
+
+.ele-top-bar { background-color: #2A2A2A; }
+
+.ele-top-bar .nav-node { float: left; position: relative; width: 16.66%; }
+
+.ele-top-bar .nav-node:before { position: absolute; top: 0; right: 0; width: 2px; height: 100%; content: ""; background-color: #202020; border-left: solid 1px #3D3D3D; }
+
+.ele-top-bar .nav-node:after { position: absolute; bottom: 0; left: 0; width: 100%; width: calc(100% - 2px); height: 1px; content: ""; background-color: #3D3D3D; border-bottom: solid 2px #202020; }
+
+.ele-top-bar .nav-node a { display: block; width: 100%; height: 46px; line-height: 46px; font-size: 16px; text-align: center; color: #ACADB2; text-decoration: none; }
+
+.has-hover .ele-top-bar .nav-node a:hover, .ele-top-bar .nav-node a:active { color: #FFF; }
+
+.ele-top-bar .nav-1 a { color: #FFF; cursor: default; }
+
+/*# sourceMappingURL=sports_style.css.map */

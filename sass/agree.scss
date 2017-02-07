@@ -1,0 +1,198 @@
+@import "compass/reset";
+@import "base/mixins";
+/*agree 同意頁面-------------------------------------------------start*/
+
+/* 頁面寬度 */
+$agree-wrap-width:					800px;							//同意頁面寬度
+
+body {
+  font-size:12px;
+  font-family: STHeiti,"Microsoft YaHei", "微软雅黑", "SimSun", "宋体",arial;
+}
+%agree-wrap {
+  width: $agree-wrap-width;
+  margin: 0 auto;
+  clear: both;
+}
+.rules-body {
+  // @extend %agree-wrap;
+}
+.agree-title {
+  display:block;
+  text-align:center;
+}
+.agree-btn {
+
+  position: relative;
+  text-align:center;
+  a {
+    display:inline-block !important;
+    text-decoration:none;
+  }
+}
+.agree-list {
+  position: relative;
+  text-align:center;
+
+   a {
+    display:inline-block !important;
+    text-decoration:none;
+  }
+}
+.agree-content {
+
+  overflow:hidden;
+  ul {
+    padding:0 20px;
+    li {
+      margin: 0 auto;
+      width:96%;
+      margin-bottom:15px;
+    }
+  }
+  h2 {
+    float:left;
+    display:block;
+    width:$agree-wrap-width;
+    text-align:center;
+  }
+  h3 {
+    float:left;
+    display:block;
+    width:$agree-wrap-width;
+    height:36px;
+    text-align:center;
+    margin-bottom:15px;
+  }
+}
+.agree-link a {
+  clear:both;
+  float:right;
+  text-decoration:none;
+  margin:0 25px 0 0;
+}
+.agree-copyright {
+  text-align: center;
+}
+
+
+
+/*agree 同意頁面-------------------------------------------------end*/
+/*以下開放編譯*/
+/*背景色*/
+body {
+  background: image-url('agree_bg.jpg') center top no-repeat;
+}
+
+#agree-bg {
+  min-width: 800px;
+}
+/*底圖*/
+
+/*logo*/
+
+#logo-bg {
+  // background: image-url('agree/agree_header_bg.png') no-repeat center top;
+}
+
+#logo {
+  @extend %agree-wrap;
+  @include bg('rule_logo.png');
+}
+
+.rule-wrap {
+  @extend %agree-wrap;
+  margin-top: 83px;
+  margin-bottom: 36px;
+  padding-bottom: 24px;
+  // border: 1px solid #2F2E2E;
+  background: #EAEAEA;
+}
+
+/*協議與規則*/
+.agree-title {
+  font: {
+    size: 14px;
+    weight: bold;
+  }
+  line-height: 39px;
+  color: #FFF;
+  background: #827252;
+}
+
+/*同意與不同意按鈕*/
+.agree-btn {
+  a {
+    margin: 24px 15px;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    // &.btn-disagree {
+    //   color: #4B260B;
+    //   background: image-url('btn_agree_left.png')
+    // }
+    // &.btn-agree {
+    //   color: lighten(#4B260B, 60%);
+    //   background: image-url('btn_agree_right.png')
+    // }'
+    color: #000;
+    background-color: #AB946D;
+    &:hover {
+      color: #FFF;
+      background-color: #8A7A5B;
+    }
+  }
+}
+/*同意頁面-選單按鈕*/
+.agree-list{
+  margin-top: 4px;
+   a {
+    margin: 8px 30px;
+    font-size: 12px;
+    line-height: 2;
+    color: #222;
+    text-decoration: underline;
+    &:hover {
+      color: #47A6BA;
+    }
+  }
+}
+.agree-content {
+  //同意頁面-中間內容
+  @include font(12px, 1.8, #111);
+
+  h3 {
+    //同意頁面-特別聲明
+    // @include font(14px, 36px);
+  }
+  ul {
+    list-style-type:decimal;
+    text-align: left;
+  }
+}
+.agree-link a {
+  //同意頁面-top按鈕
+  @include font(18px, 3 , #111);
+}
+.footer-bg {
+  // background: image-url('agree/agree_footer_bg.png') repeat-x;
+}
+.agree-copyright {
+  //同意頁面-Copyright
+  @extend %agree-wrap;
+  @include font(12px, 18px, #111);
+  // background: image-url('agree_footer.png') center top no-repeat #D9D2CC;
+
+
+}
+//增
+.agree-container {
+  text-align: center;
+  h2 {
+    //同意頁面-通則
+    margin-bottom: 6px;
+    @include font(15px, 48px, #5E5E5E);
+    font-weight: bold;
+  }
+}
